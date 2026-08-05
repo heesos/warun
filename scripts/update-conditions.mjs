@@ -14,8 +14,10 @@ const CURRENT_VARS = [
   'precipitation', 'weather_code', 'wind_speed_10m', 'wind_gusts_10m', 'visibility',
 ];
 const HOURLY_VARS = [
-  'relative_humidity_2m', 'precipitation', 'weather_code', 'precipitation_probability',
+  'temperature_2m', 'relative_humidity_2m', 'precipitation', 'weather_code',
+  'precipitation_probability', 'wind_speed_10m', 'wind_gusts_10m', 'visibility',
 ];
+const PREDICTION_HOURS_AHEAD = [3, 6, 12];
 
 // WMO weather codes: https://open-meteo.com/en/docs
 const THUNDERSTORM_CODES = new Set([95, 96, 99]);
@@ -66,7 +68,7 @@ const windScore = (kmh) => lerp(kmh, [[0, 70], [5, 70], [20, 100], [35, 100], [5
 const wetnessBaseScore = (hours) => lerp(hours, [[0, 0], [3, 10], [6, 30], [12, 50], [24, 75], [48, 100]]);
 
 function round1(n) {
-  return Math.round(n * 10) / 10;
+  return n == null ? null : Math.round(n * 10) / 10;
 }
 
 function bandFor(score) {
@@ -112,18 +114,22 @@ function findNowIndex(hourlyTimes, currentTime) {
   return idx === -1 ? 0 : idx;
 }
 
-function hoursSinceRain(hourly, nowIdx) {
-  for (let i = nowIdx; i >= 0; i--) {
+// All three of these scan the hourly array (which already spans past_days
+// through forecast_days in one fetch), so calling them with a future index
+// naturally accounts for forecast rain/dampness between now and that point -
+// the same functions serve both the "now" score and every +Nh prediction.
+function hoursSinceRain(hourly, idx) {
+  for (let i = idx; i >= 0; i--) {
     const precip = hourly.precipitation[i] ?? 0;
     if (precip > 0.2 || WET_CODES.has(hourly.weather_code[i])) {
-      return nowIdx - i;
+      return idx - i;
     }
   }
-  return nowIdx; // no rain found anywhere in the window we can see
+  return idx; // no rain found anywhere in the window we can see
 }
 
-function rainProbabilityNudge(hourly, nowIdx) {
-  const upcoming = (hourly.precipitation_probability ?? []).slice(nowIdx + 1, nowIdx + 4);
+function rainProbabilityNudge(hourly, idx) {
+  const upcoming = (hourly.precipitation_probability ?? []).slice(idx + 1, idx + 4);
   const known = upcoming.filter((v) => v != null);
   const maxPop = known.length ? Math.max(...known) : 0;
   if (maxPop >= 60) return 15;
@@ -131,9 +137,9 @@ function rainProbabilityNudge(hourly, nowIdx) {
   return 0;
 }
 
-function dampInWindow(hourly, nowIdx, hoursBack) {
-  const start = Math.max(0, nowIdx - hoursBack + 1);
-  for (let i = start; i <= nowIdx; i++) {
+function dampInWindow(hourly, idx, hoursBack) {
+  const start = Math.max(0, idx - hoursBack + 1);
+  for (let i = start; i <= idx; i++) {
     const precip = hourly.precipitation[i] ?? 0;
     const rh = hourly.relative_humidity_2m[i] ?? 0;
     if (precip > 0.2 || WET_CODES.has(hourly.weather_code[i]) || rh > 90) return true;
@@ -141,46 +147,109 @@ function dampInWindow(hourly, nowIdx, hoursBack) {
   return false;
 }
 
-function scoreSpot(spot, forecast) {
-  const current = forecast.current;
-  const hourly = forecast.hourly;
-  const nowIdx = findNowIndex(hourly.time, current.time);
-
-  const effectiveWindKmh = Math.max(current.wind_speed_10m ?? 0, 0.7 * (current.wind_gusts_10m ?? 0));
-  const hSinceRain = hoursSinceRain(hourly, nowIdx);
-  const damp6h = dampInWindow(hourly, nowIdx, 6);
-  const isPrecipitatingNow = (current.precipitation ?? 0) > 0.2 || WET_CODES.has(current.weather_code);
-
-  const nudge = isPrecipitatingNow ? 0 : rainProbabilityNudge(hourly, nowIdx);
+// The actual CCS formula: weighted sub-scores, then hard safety caps. Shared by
+// both the "now" score (fed from Open-Meteo's dedicated current-conditions
+// reading) and each +Nh prediction (fed from the hourly forecast array), so the
+// two can never drift into different methodologies.
+function computeScore({ temp, humidity, windSpeed, windGust, hSinceRain, isPrecipitatingNow, nudge, weatherCode, visibility, damp6h, rainSensitiveHours }) {
+  const effectiveWindKmh = Math.max(windSpeed ?? 0, 0.7 * (windGust ?? 0));
 
   const subScores = {
-    temperature: round1(temperatureScore(current.temperature_2m)),
+    temperature: round1(temperatureScore(temp)),
     wetness: round1(Math.max(0, wetnessBaseScore(hSinceRain) - nudge)),
-    humidity: round1(humidityScore(current.relative_humidity_2m)),
+    humidity: round1(humidityScore(humidity)),
     wind: round1(windScore(effectiveWindKmh)),
   };
 
   const total = Object.keys(WEIGHTS).reduce((sum, key) => sum + WEIGHTS[key] * subScores[key], 0);
 
-  const rainSensitiveHours = rainSensitiveHoursFor(spot);
   const candidates = [];
-  if (THUNDERSTORM_CODES.has(current.weather_code)) candidates.push(['active_thunderstorm', 5]);
-  if ((current.wind_speed_10m ?? 0) > 60 || (current.wind_gusts_10m ?? 0) > 80) candidates.push(['dangerous_wind', 15]);
+  if (THUNDERSTORM_CODES.has(weatherCode)) candidates.push(['active_thunderstorm', 5]);
+  if ((windSpeed ?? 0) > 60 || (windGust ?? 0) > 80) candidates.push(['dangerous_wind', 15]);
   if (isPrecipitatingNow) candidates.push(['precipitating_now', 20]);
   if (rainSensitiveHours != null && hSinceRain < rainSensitiveHours) candidates.push(['wet_sensitive_rock', 25]);
-  if (current.temperature_2m < 0 && damp6h) candidates.push(['verglas_risk', 15]);
-  if (FOG_CODES.has(current.weather_code) && (current.visibility ?? 99999) < 1000) candidates.push(['low_visibility', 30]);
-  if (current.temperature_2m > 40) candidates.push(['extreme_heat', 20]);
+  if (temp < 0 && damp6h) candidates.push(['verglas_risk', 15]);
+  if (FOG_CODES.has(weatherCode) && (visibility ?? 99999) < 1000) candidates.push(['low_visibility', 30]);
+  if (temp > 40) candidates.push(['extreme_heat', 20]);
 
   const overridesApplied = candidates.filter(([, cap]) => cap < total).map(([reason]) => reason);
   const finalScore = candidates.length ? Math.min(total, ...candidates.map(([, cap]) => cap)) : total;
   const score = Math.max(0, Math.min(100, Math.round(finalScore)));
 
+  return { score, band: bandFor(score), subScores, overridesApplied };
+}
+
+function scoreAtIndex(hourly, idx, rainSensitiveHours) {
+  const weatherCode = hourly.weather_code[idx];
+  const precip = hourly.precipitation[idx] ?? 0;
+  const hSinceRain = hoursSinceRain(hourly, idx);
+  const damp6h = dampInWindow(hourly, idx, 6);
+  const isPrecipitatingNow = precip > 0.2 || WET_CODES.has(weatherCode);
+  const nudge = isPrecipitatingNow ? 0 : rainProbabilityNudge(hourly, idx);
+
+  return computeScore({
+    temp: hourly.temperature_2m[idx],
+    humidity: hourly.relative_humidity_2m[idx],
+    windSpeed: hourly.wind_speed_10m[idx],
+    windGust: hourly.wind_gusts_10m[idx],
+    hSinceRain,
+    isPrecipitatingNow,
+    nudge,
+    weatherCode,
+    visibility: hourly.visibility?.[idx],
+    damp6h,
+    rainSensitiveHours,
+  });
+}
+
+function scoreSpot(spot, forecast) {
+  const current = forecast.current;
+  const hourly = forecast.hourly;
+  const nowIdx = findNowIndex(hourly.time, current.time);
+  const rainSensitiveHours = rainSensitiveHoursFor(spot);
+
+  const hSinceRain = hoursSinceRain(hourly, nowIdx);
+  const damp6h = dampInWindow(hourly, nowIdx, 6);
+  const isPrecipitatingNow = (current.precipitation ?? 0) > 0.2 || WET_CODES.has(current.weather_code);
+  const nudge = isPrecipitatingNow ? 0 : rainProbabilityNudge(hourly, nowIdx);
+
+  const now = computeScore({
+    temp: current.temperature_2m,
+    humidity: current.relative_humidity_2m,
+    windSpeed: current.wind_speed_10m,
+    windGust: current.wind_gusts_10m,
+    hSinceRain,
+    isPrecipitatingNow,
+    nudge,
+    weatherCode: current.weather_code,
+    visibility: current.visibility,
+    damp6h,
+    rainSensitiveHours,
+  });
+
+  const predictions = {};
+  for (const hoursAhead of PREDICTION_HOURS_AHEAD) {
+    const idx = nowIdx + hoursAhead;
+    if (idx >= hourly.time.length) continue;
+    const prediction = scoreAtIndex(hourly, idx, rainSensitiveHours);
+    predictions[`+${hoursAhead}h`] = {
+      ...prediction,
+      at: hourly.time[idx],
+      raw: {
+        temp: hourly.temperature_2m[idx],
+        humidity: hourly.relative_humidity_2m[idx],
+        windKmh: round1(hourly.wind_speed_10m[idx]),
+        windGustKmh: round1(hourly.wind_gusts_10m[idx]),
+        precipMm: hourly.precipitation[idx],
+        visibilityM: hourly.visibility?.[idx] ?? null,
+        weatherCode: hourly.weather_code[idx],
+      },
+    };
+  }
+
   return {
-    score,
-    band: bandFor(score),
-    subScores,
-    overridesApplied,
+    ...now,
+    predictions,
     raw: {
       temp: current.temperature_2m,
       feelsLike: current.apparent_temperature,

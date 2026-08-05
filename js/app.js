@@ -113,6 +113,57 @@
     }
   }
 
+  function formatTime(isoLike) {
+    // Open-Meteo local timestamps look like "2026-08-05T22:00" with no offset
+    // suffix, already in the spot's local time since we request timezone=auto.
+    const date = new Date(isoLike);
+    if (Number.isNaN(date.getTime())) return '';
+    return date.toLocaleTimeString(undefined, { hour: '2-digit', minute: '2-digit' });
+  }
+
+  // Renders one view (the "now" conditions, or a +Nh prediction) into a card's
+  // DOM refs. Both shapes carry the same {score, band, subScores,
+  // overridesApplied, raw} fields, so one function serves both.
+  function applyView(refs, view, { prefix = '', emptyMessage = '' } = {}) {
+    const { article, valueEl, bandEl, subScoresEl, overrideEl, metaEl } = refs;
+
+    for (const cls of Array.from(article.classList)) {
+      if (cls.startsWith('band-')) article.classList.remove(cls);
+    }
+
+    if (!view) {
+      valueEl.textContent = '—';
+      bandEl.textContent = 'No data';
+      subScoresEl.innerHTML = '';
+      overrideEl.hidden = true;
+      metaEl.textContent = emptyMessage;
+      return;
+    }
+
+    valueEl.textContent = view.score;
+    bandEl.textContent = view.band;
+    article.classList.add(`band-${view.band.toLowerCase()}`);
+
+    subScoresEl.innerHTML = '';
+    for (const [key, label] of Object.entries(SUB_SCORE_LABELS)) {
+      const value = view.subScores?.[key];
+      if (value == null) continue;
+      const row = subScoreTemplate.content.cloneNode(true);
+      row.querySelector('.sub-score__label').textContent = label;
+      row.querySelector('.sub-score__fill').style.width = `${Math.max(0, Math.min(100, value))}%`;
+      subScoresEl.appendChild(row);
+    }
+
+    overrideEl.hidden = !view.overridesApplied?.length;
+    if (!overrideEl.hidden) {
+      overrideEl.textContent = view.overridesApplied.map((code) => OVERRIDE_LABELS[code] || code).join(' · ');
+    }
+
+    metaEl.textContent = view.raw
+      ? `${prefix}${Math.round(view.raw.temp)}°C · ${Math.round(view.raw.humidity)}% humidity · ${Math.round(view.raw.windKmh)} km/h wind`
+      : '';
+  }
+
   function buildCard(spot) {
     const node = cardTemplate.content.cloneNode(true);
     const article = node.querySelector('.spot-card');
@@ -124,43 +175,44 @@
       ? `${spot.rockType.charAt(0).toUpperCase()}${spot.rockType.slice(1)}`
       : '';
 
-    const valueEl = node.querySelector('.score-badge__value');
-    const bandEl = node.querySelector('.score-badge__band');
-    const metaEl = node.querySelector('.spot-card__meta');
+    const refs = {
+      article,
+      valueEl: node.querySelector('.score-badge__value'),
+      bandEl: node.querySelector('.score-badge__band'),
+      subScoresEl: node.querySelector('.sub-scores'),
+      overrideEl: node.querySelector('.spot-card__override'),
+      metaEl: node.querySelector('.spot-card__meta'),
+    };
+    const toggle = node.querySelector('.time-toggle');
 
     const c = spot.conditions;
     if (!c) {
-      valueEl.textContent = '—';
-      bandEl.textContent = 'No data';
-      metaEl.textContent = 'Waiting for the next scheduled update.';
+      applyView(refs, null, { emptyMessage: 'Waiting for the next scheduled update.' });
+      toggle.hidden = true;
       return node;
     }
 
-    valueEl.textContent = c.score;
-    bandEl.textContent = c.band;
-    article.classList.add(`band-${c.band.toLowerCase()}`);
+    const nowPrefix = c.stale ? 'Showing last successful reading — ' : '';
+    applyView(refs, c, { prefix: nowPrefix });
 
-    const subScoresEl = node.querySelector('.sub-scores');
-    for (const [key, label] of Object.entries(SUB_SCORE_LABELS)) {
-      const value = c.subScores?.[key];
-      if (value == null) continue;
-      const row = subScoreTemplate.content.cloneNode(true);
-      row.querySelector('.sub-score__label').textContent = label;
-      const fill = row.querySelector('.sub-score__fill');
-      fill.style.width = `${Math.max(0, Math.min(100, value))}%`;
-      subScoresEl.appendChild(row);
+    for (const btn of toggle.querySelectorAll('.time-btn[data-offset^="+"]')) {
+      if (!c.predictions?.[btn.dataset.offset]) btn.disabled = true;
     }
 
-    if (c.overridesApplied?.length) {
-      const overrideEl = node.querySelector('.spot-card__override');
-      overrideEl.hidden = false;
-      overrideEl.textContent = c.overridesApplied.map((code) => OVERRIDE_LABELS[code] || code).join(' · ');
-    }
-
-    if (c.raw) {
-      const staleNote = c.stale ? ' — showing last successful reading' : '';
-      metaEl.textContent = `${Math.round(c.raw.temp)}°C · ${Math.round(c.raw.humidity)}% humidity · ${Math.round(c.raw.windKmh)} km/h wind${staleNote}`;
-    }
+    toggle.addEventListener('click', (event) => {
+      const btn = event.target.closest('.time-btn');
+      if (!btn || btn.disabled) return;
+      for (const b of toggle.querySelectorAll('.time-btn')) {
+        b.setAttribute('aria-pressed', String(b === btn));
+      }
+      if (btn.dataset.offset === 'now') {
+        applyView(refs, c, { prefix: nowPrefix });
+        return;
+      }
+      const prediction = c.predictions?.[btn.dataset.offset];
+      const time = formatTime(prediction?.at);
+      applyView(refs, prediction, { prefix: time ? `Predicted for ${time} — ` : 'Predicted — ' });
+    });
 
     return node;
   }

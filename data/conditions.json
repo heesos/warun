@@ -1,247 +1,393 @@
-{
-  "generatedAt": "2026-08-05T16:38:26.652Z",
-  "spots": {
-    "yosemite-el-capitan": {
-      "score": 87,
-      "band": "Prime",
-      "subScores": {
-        "temperature": 75.5,
-        "wetness": 100,
-        "humidity": 100,
-        "wind": 76.6
-      },
-      "overridesApplied": [],
-      "raw": {
-        "temp": 22.9,
-        "feelsLike": 19.1,
-        "humidity": 11,
-        "windKmh": 8.3,
-        "windGustKmh": 10.4,
-        "precipMm": 0,
-        "visibilityM": 90000,
-        "weatherCode": 0,
-        "hoursSinceRain": 57,
-        "observedAt": "2026-08-05T09:30",
-        "timezone": "America/Los_Angeles"
-      }
-    },
-    "joshua-tree": {
-      "score": 76,
-      "band": "Excellent",
-      "subScores": {
-        "temperature": 37,
-        "wetness": 100,
-        "humidity": 89,
-        "wind": 100
-      },
-      "overridesApplied": [],
-      "raw": {
-        "temp": 30.8,
-        "feelsLike": 30.6,
-        "humidity": 51,
-        "windKmh": 29,
-        "windGustKmh": 35.3,
-        "precipMm": 0,
-        "visibilityM": 32400,
-        "weatherCode": 0,
-        "hoursSinceRain": 57,
-        "observedAt": "2026-08-05T09:30",
-        "timezone": "America/Los_Angeles"
-      }
-    },
-    "squamish": {
-      "score": 94,
-      "band": "Prime",
-      "subScores": {
-        "temperature": 99,
-        "wetness": 100,
-        "humidity": 96,
-        "wind": 71.8
-      },
-      "overridesApplied": [],
-      "raw": {
-        "temp": 18.2,
-        "feelsLike": 16.2,
-        "humidity": 44,
-        "windKmh": 5.9,
-        "windGustKmh": 6.1,
-        "precipMm": 0,
-        "visibilityM": 37100,
-        "weatherCode": 0,
-        "hoursSinceRain": 57,
-        "observedAt": "2026-08-05T09:30",
-        "timezone": "America/Vancouver"
-      }
-    },
-    "fontainebleau": {
-      "score": 78,
-      "band": "Excellent",
-      "subScores": {
-        "temperature": 50,
-        "wetness": 83.3,
-        "humidity": 100,
-        "wind": 100
-      },
-      "overridesApplied": [],
-      "raw": {
-        "temp": 28,
-        "feelsLike": 25.6,
-        "humidity": 30,
-        "windKmh": 14.2,
-        "windGustKmh": 40.3,
-        "precipMm": 0,
-        "visibilityM": 45760,
-        "weatherCode": 1,
-        "hoursSinceRain": 32,
-        "observedAt": "2026-08-05T18:30",
-        "timezone": "Europe/Paris"
-      }
-    },
-    "el-chorro": {
-      "score": 70,
-      "band": "Excellent",
-      "subScores": {
-        "temperature": 15.2,
-        "wetness": 100,
-        "humidity": 100,
-        "wind": 100
-      },
-      "overridesApplied": [],
-      "raw": {
-        "temp": 36.6,
-        "feelsLike": 35.5,
-        "humidity": 26,
-        "windKmh": 16.8,
-        "windGustKmh": 33.1,
-        "precipMm": 0,
-        "visibilityM": 47300,
-        "weatherCode": 0,
-        "hoursSinceRain": 66,
-        "observedAt": "2026-08-05T18:30",
-        "timezone": "Europe/Madrid"
-      }
-    },
-    "kalymnos": {
-      "score": 81,
-      "band": "Prime",
-      "subScores": {
-        "temperature": 49.5,
-        "wetness": 100,
-        "humidity": 96,
-        "wind": 96.3
-      },
-      "overridesApplied": [],
-      "raw": {
-        "temp": 28.1,
-        "feelsLike": 28.6,
-        "humidity": 44,
-        "windKmh": 7.6,
-        "windGustKmh": 25.9,
-        "precipMm": 0,
-        "visibilityM": 42560,
-        "weatherCode": 0,
-        "hoursSinceRain": 67,
-        "observedAt": "2026-08-05T19:30",
-        "timezone": "Europe/Athens"
-      }
-    },
-    "railay": {
-      "score": 20,
-      "band": "Fair",
-      "subScores": {
-        "temperature": 58,
-        "wetness": 0,
-        "humidity": 16,
-        "wind": 100
-      },
-      "overridesApplied": [
-        "precipitating_now"
-      ],
-      "raw": {
-        "temp": 26.4,
-        "feelsLike": 31.2,
-        "humidity": 91,
-        "windKmh": 12.5,
-        "windGustKmh": 28.8,
-        "precipMm": 0.1,
-        "visibilityM": 10340,
-        "weatherCode": 51,
-        "hoursSinceRain": 0,
-        "observedAt": "2026-08-05T23:30",
-        "timezone": "Asia/Bangkok"
-      }
-    },
-    "yangshuo": {
-      "score": 45,
-      "band": "Good",
-      "subScores": {
-        "temperature": 62,
-        "wetness": 30,
-        "humidity": 12,
-        "wind": 70
-      },
-      "overridesApplied": [],
-      "raw": {
-        "temp": 25.6,
-        "feelsLike": 31.3,
-        "humidity": 92,
-        "windKmh": 2.8,
-        "windGustKmh": 4.7,
-        "precipMm": 0,
-        "visibilityM": 11240,
-        "weatherCode": 2,
-        "hoursSinceRain": 6,
-        "observedAt": "2026-08-06T00:30",
-        "timezone": "Asia/Shanghai"
-      }
-    },
-    "arapiles": {
-      "score": 69,
-      "band": "Excellent",
-      "subScores": {
-        "temperature": 85.2,
-        "wetness": 66.7,
-        "humidity": 36,
-        "wind": 74.6
-      },
-      "overridesApplied": [],
-      "raw": {
-        "temp": 6.3,
-        "feelsLike": 4,
-        "humidity": 82,
-        "windKmh": 5.5,
-        "windGustKmh": 10.4,
-        "precipMm": 0,
-        "visibilityM": 51940,
-        "weatherCode": 3,
-        "hoursSinceRain": 20,
-        "observedAt": "2026-08-06T02:30",
-        "timezone": "Australia/Melbourne"
-      }
-    },
-    "rocklands": {
-      "score": 87,
-      "band": "Prime",
-      "subScores": {
-        "temperature": 93.6,
-        "wetness": 100,
-        "humidity": 40,
-        "wind": 100
-      },
-      "overridesApplied": [],
-      "raw": {
-        "temp": 8.4,
-        "feelsLike": 5.7,
-        "humidity": 80,
-        "windKmh": 10.1,
-        "windGustKmh": 33.5,
-        "precipMm": 0,
-        "visibilityM": 6180,
-        "weatherCode": 2,
-        "hoursSinceRain": 66,
-        "observedAt": "2026-08-05T18:30",
-        "timezone": "Africa/Johannesburg"
-      }
-    }
-  }
+﻿{
+    "generatedAt":  "2026-08-05T17:29:32.589Z",
+    "spots":  {
+                  "bor":  {
+                              "score":  25,
+                              "band":  "Fair",
+                              "subScores":  {
+                                                "temperature":  46,
+                                                "wetness":  0,
+                                                "humidity":  82,
+                                                "wind":  96.3
+                                            },
+                              "overridesApplied":  [
+                                                       "wet_sensitive_rock"
+                                                   ],
+                              "predictions":  {
+                                                  "+3h":  {
+                                                              "score":  25,
+                                                              "band":  "Fair",
+                                                              "subScores":  {
+                                                                                "temperature":  70.5,
+                                                                                "wetness":  10,
+                                                                                "humidity":  52,
+                                                                                "wind":  84.2
+                                                                            },
+                                                              "overridesApplied":  [
+                                                                                       "wet_sensitive_rock"
+                                                                                   ],
+                                                              "at":  "2026-08-05T22:00",
+                                                              "raw":  {
+                                                                          "temp":  23.9,
+                                                                          "humidity":  74,
+                                                                          "windKmh":  2.6,
+                                                                          "windGustKmh":  17.3,
+                                                                          "precipMm":  0.00,
+                                                                          "visibilityM":  38160.00,
+                                                                          "weatherCode":  3
+                                                                      }
+                                                          },
+                                                  "+6h":  {
+                                                              "score":  25,
+                                                              "band":  "Fair",
+                                                              "subScores":  {
+                                                                                "temperature":  74,
+                                                                                "wetness":  30,
+                                                                                "humidity":  72,
+                                                                                "wind":  70
+                                                                            },
+                                                              "overridesApplied":  [
+                                                                                       "wet_sensitive_rock"
+                                                                                   ],
+                                                              "at":  "2026-08-06T01:00",
+                                                              "raw":  {
+                                                                          "temp":  23.2,
+                                                                          "humidity":  64,
+                                                                          "windKmh":  1.8,
+                                                                          "windGustKmh":  4.7,
+                                                                          "precipMm":  0.00,
+                                                                          "visibilityM":  40880.00,
+                                                                          "weatherCode":  0
+                                                                      }
+                                                          },
+                                                  "+12h":  {
+                                                               "score":  25,
+                                                               "band":  "Fair",
+                                                               "subScores":  {
+                                                                                 "temperature":  72.5,
+                                                                                 "wetness":  43,
+                                                                                 "humidity":  68,
+                                                                                 "wind":  73.6
+                                                                             },
+                                                               "overridesApplied":  [
+                                                                                        "wet_sensitive_rock"
+                                                                                    ],
+                                                               "at":  "2026-08-06T07:00",
+                                                               "raw":  {
+                                                                           "temp":  23.5,
+                                                                           "humidity":  66,
+                                                                           "windKmh":  4.7,
+                                                                           "windGustKmh":  9.7,
+                                                                           "precipMm":  0.00,
+                                                                           "visibilityM":  39040.00,
+                                                                           "weatherCode":  3
+                                                                       }
+                                                           }
+                                              },
+                              "raw":  {
+                                          "temp":  28.8,
+                                          "feelsLike":  31.0,
+                                          "humidity":  58,
+                                          "windKmh":  10.5,
+                                          "windGustKmh":  25.9,
+                                          "precipMm":  0.00,
+                                          "visibilityM":  40580.00,
+                                          "weatherCode":  2,
+                                          "hoursSinceRain":  0,
+                                          "observedAt":  "2026-08-05T19:15",
+                                          "timezone":  "Europe/Prague"
+                                      }
+                          },
+                  "kamienna-gora":  {
+                                        "score":  74,
+                                        "band":  "Excellent",
+                                        "subScores":  {
+                                                          "temperature":  38.9,
+                                                          "wetness":  88,
+                                                          "humidity":  100,
+                                                          "wind":  93.3
+                                                      },
+                                        "overridesApplied":  [
+
+                                                             ],
+                                        "predictions":  {
+                                                            "+3h":  {
+                                                                        "score":  78,
+                                                                        "band":  "Excellent",
+                                                                        "subScores":  {
+                                                                                          "temperature":  80.5,
+                                                                                          "wetness":  91,
+                                                                                          "humidity":  54,
+                                                                                          "wind":  73.6
+                                                                                      },
+                                                                        "overridesApplied":  [
+
+                                                                                             ],
+                                                                        "at":  "2026-08-05T22:00",
+                                                                        "raw":  {
+                                                                                    "temp":  21.9,
+                                                                                    "humidity":  73,
+                                                                                    "windKmh":  3.9,
+                                                                                    "windGustKmh":  9.7,
+                                                                                    "precipMm":  0.00,
+                                                                                    "visibilityM":  37280.00,
+                                                                                    "weatherCode":  3
+                                                                                }
+                                                                    },
+                                                            "+6h":  {
+                                                                        "score":  79,
+                                                                        "band":  "Excellent",
+                                                                        "subScores":  {
+                                                                                          "temperature":  85,
+                                                                                          "wetness":  94,
+                                                                                          "humidity":  52,
+                                                                                          "wind":  70.1
+                                                                                      },
+                                                                        "overridesApplied":  [
+
+                                                                                             ],
+                                                                        "at":  "2026-08-06T01:00",
+                                                                        "raw":  {
+                                                                                    "temp":  21.0,
+                                                                                    "humidity":  74,
+                                                                                    "windKmh":  4.4,
+                                                                                    "windGustKmh":  7.2,
+                                                                                    "precipMm":  0.00,
+                                                                                    "visibilityM":  36780.00,
+                                                                                    "weatherCode":  3
+                                                                                }
+                                                                    },
+                                                            "+12h":  {
+                                                                         "score":  78,
+                                                                         "band":  "Excellent",
+                                                                         "subScores":  {
+                                                                                           "temperature":  91.5,
+                                                                                           "wetness":  93,
+                                                                                           "humidity":  36,
+                                                                                           "wind":  70
+                                                                                       },
+                                                                         "overridesApplied":  [
+
+                                                                                              ],
+                                                                         "at":  "2026-08-06T07:00",
+                                                                         "raw":  {
+                                                                                     "temp":  19.7,
+                                                                                     "humidity":  82,
+                                                                                     "windKmh":  3.1,
+                                                                                     "windGustKmh":  6.1,
+                                                                                     "precipMm":  0.00,
+                                                                                     "visibilityM":  28940.00,
+                                                                                     "weatherCode":  3
+                                                                                 }
+                                                                     }
+                                                        },
+                                        "raw":  {
+                                                    "temp":  30.3,
+                                                    "feelsLike":  32.0,
+                                                    "humidity":  40,
+                                                    "windKmh":  0.5,
+                                                    "windGustKmh":  23.8,
+                                                    "precipMm":  0.00,
+                                                    "visibilityM":  43720.00,
+                                                    "weatherCode":  3,
+                                                    "hoursSinceRain":  36,
+                                                    "observedAt":  "2026-08-05T19:15",
+                                                    "timezone":  "Europe/Warsaw"
+                                                }
+                                    },
+                  "smietniczek":  {
+                                      "score":  49,
+                                      "band":  "Good",
+                                      "subScores":  {
+                                                        "temperature":  39.6,
+                                                        "wetness":  7,
+                                                        "humidity":  93,
+                                                        "wind":  89.7
+                                                    },
+                                      "overridesApplied":  [
+
+                                                           ],
+                                      "predictions":  {
+                                                          "+3h":  {
+                                                                      "score":  20,
+                                                                      "band":  "Fair",
+                                                                      "subScores":  {
+                                                                                        "temperature":  64.5,
+                                                                                        "wetness":  0,
+                                                                                        "humidity":  54,
+                                                                                        "wind":  85.8
+                                                                                    },
+                                                                      "overridesApplied":  [
+                                                                                               "precipitating_now"
+                                                                                           ],
+                                                                      "at":  "2026-08-05T22:00",
+                                                                      "raw":  {
+                                                                                  "temp":  25.1,
+                                                                                  "humidity":  73,
+                                                                                  "windKmh":  6.8,
+                                                                                  "windGustKmh":  18.4,
+                                                                                  "precipMm":  0.10,
+                                                                                  "visibilityM":  36700.00,
+                                                                                  "weatherCode":  80
+                                                                              }
+                                                                  },
+                                                          "+6h":  {
+                                                                      "score":  51,
+                                                                      "band":  "Good",
+                                                                      "subScores":  {
+                                                                                        "temperature":  80.5,
+                                                                                        "wetness":  10,
+                                                                                        "humidity":  38,
+                                                                                        "wind":  70
+                                                                                    },
+                                                                      "overridesApplied":  [
+
+                                                                                           ],
+                                                                      "at":  "2026-08-06T01:00",
+                                                                      "raw":  {
+                                                                                  "temp":  21.9,
+                                                                                  "humidity":  81,
+                                                                                  "windKmh":  0.8,
+                                                                                  "windGustKmh":  5.4,
+                                                                                  "precipMm":  0.00,
+                                                                                  "visibilityM":  34820.00,
+                                                                                  "weatherCode":  0
+                                                                              }
+                                                                  },
+                                                          "+12h":  {
+                                                                       "score":  61,
+                                                                       "band":  "Excellent",
+                                                                       "subScores":  {
+                                                                                         "temperature":  70,
+                                                                                         "wetness":  40,
+                                                                                         "humidity":  62,
+                                                                                         "wind":  78.2
+                                                                                     },
+                                                                       "overridesApplied":  [
+
+                                                                                            ],
+                                                                       "at":  "2026-08-06T07:00",
+                                                                       "raw":  {
+                                                                                   "temp":  24.0,
+                                                                                   "humidity":  69,
+                                                                                   "windKmh":  5,
+                                                                                   "windGustKmh":  13,
+                                                                                   "precipMm":  0.00,
+                                                                                   "visibilityM":  38320.00,
+                                                                                   "weatherCode":  3
+                                                                               }
+                                                                   }
+                                                      },
+                                      "raw":  {
+                                                  "temp":  30.1,
+                                                  "feelsLike":  31.9,
+                                                  "humidity":  47,
+                                                  "windKmh":  6.3,
+                                                  "windGustKmh":  21.2,
+                                                  "precipMm":  0.00,
+                                                  "visibilityM":  42060.00,
+                                                  "weatherCode":  2,
+                                                  "hoursSinceRain":  2,
+                                                  "observedAt":  "2026-08-05T19:15",
+                                                  "timezone":  "Europe/Warsaw"
+                                              }
+                                  },
+                  "jerzmanice":  {
+                                     "score":  25,
+                                     "band":  "Fair",
+                                     "subScores":  {
+                                                       "temperature":  34,
+                                                       "wetness":  69,
+                                                       "humidity":  98,
+                                                       "wind":  95.8
+                                                   },
+                                     "overridesApplied":  [
+                                                              "wet_sensitive_rock"
+                                                          ],
+                                     "predictions":  {
+                                                         "+3h":  {
+                                                                     "score":  68,
+                                                                     "band":  "Excellent",
+                                                                     "subScores":  {
+                                                                                       "temperature":  58,
+                                                                                       "wetness":  75,
+                                                                                       "humidity":  68,
+                                                                                       "wind":  77.6
+                                                                                   },
+                                                                     "overridesApplied":  [
+
+                                                                                          ],
+                                                                     "at":  "2026-08-05T22:00",
+                                                                     "raw":  {
+                                                                                 "temp":  26.4,
+                                                                                 "humidity":  66,
+                                                                                 "windKmh":  3.7,
+                                                                                 "windGustKmh":  12.6,
+                                                                                 "precipMm":  0.00,
+                                                                                 "visibilityM":  39660.00,
+                                                                                 "weatherCode":  3
+                                                                             }
+                                                                 },
+                                                         "+6h":  {
+                                                                     "score":  69,
+                                                                     "band":  "Excellent",
+                                                                     "subScores":  {
+                                                                                       "temperature":  79,
+                                                                                       "wetness":  78,
+                                                                                       "humidity":  34,
+                                                                                       "wind":  70.6
+                                                                                   },
+                                                                     "overridesApplied":  [
+
+                                                                                          ],
+                                                                     "at":  "2026-08-06T01:00",
+                                                                     "raw":  {
+                                                                                 "temp":  22.2,
+                                                                                 "humidity":  83,
+                                                                                 "windKmh":  2.9,
+                                                                                 "windGustKmh":  7.6,
+                                                                                 "precipMm":  0.00,
+                                                                                 "visibilityM":  31880.00,
+                                                                                 "weatherCode":  2
+                                                                             }
+                                                                 },
+                                                         "+12h":  {
+                                                                      "score":  73,
+                                                                      "band":  "Excellent",
+                                                                      "subScores":  {
+                                                                                        "temperature":  77.5,
+                                                                                        "wetness":  84,
+                                                                                        "humidity":  40,
+                                                                                        "wind":  77.6
+                                                                                    },
+                                                                      "overridesApplied":  [
+
+                                                                                           ],
+                                                                      "at":  "2026-08-06T07:00",
+                                                                      "raw":  {
+                                                                                  "temp":  22.5,
+                                                                                  "humidity":  80,
+                                                                                  "windKmh":  7.2,
+                                                                                  "windGustKmh":  12.6,
+                                                                                  "precipMm":  0.00,
+                                                                                  "visibilityM":  31740.00,
+                                                                                  "weatherCode":  3
+                                                                              }
+                                                                  }
+                                                     },
+                                     "raw":  {
+                                                 "temp":  31.6,
+                                                 "feelsLike":  33.0,
+                                                 "humidity":  42,
+                                                 "windKmh":  7.9,
+                                                 "windGustKmh":  25.6,
+                                                 "precipMm":  0.00,
+                                                 "visibilityM":  42780.00,
+                                                 "weatherCode":  1,
+                                                 "hoursSinceRain":  21,
+                                                 "observedAt":  "2026-08-05T19:15",
+                                                 "timezone":  "Europe/Warsaw"
+                                             }
+                                 }
+              }
 }

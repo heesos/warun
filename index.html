@@ -80,6 +80,12 @@
         </div>
       </header>
       <p class="spot-card__description"></p>
+      <div class="time-toggle" role="group" aria-label="Show score for">
+        <button type="button" class="time-btn" data-offset="now" aria-pressed="true">Now</button>
+        <button type="button" class="time-btn" data-offset="+3h" aria-pressed="false">+3h</button>
+        <button type="button" class="time-btn" data-offset="+6h" aria-pressed="false">+6h</button>
+        <button type="button" class="time-btn" data-offset="+12h" aria-pressed="false">+12h</button>
+      </div>
       <ul class="sub-scores" aria-label="Score breakdown"></ul>
       <p class="spot-card__override" hidden></p>
       <p class="spot-card__meta"></p>

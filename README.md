@@ -42,6 +42,19 @@ this is just the summary.
 
 Bands: **0–19 Poor · 20–39 Fair · 40–59 Good · 60–79 Excellent · 80–100 Prime.**
 
+**Where "past" comes from.** Every fetch asks Open-Meteo for the last 48 real hours alongside the
+forecast (`past_days=2`), so "hours since it last rained" is computed fresh from genuine historical
+data on every run — it's not a self-built log. What *isn't* kept is a history of our own past
+scores: `data/conditions.json` is fully overwritten each run with only the latest snapshot, so
+there's no "score 6 hours ago" record sitting in that file (only in git's commit history, which
+isn't a convenient format for it). That's an intentional simplification, not a bug — the score
+itself is always computed correctly, there's just no built-in trend view yet.
+
+**Predictions (+3h / +6h / +12h).** Each card's time buttons run the exact same formula above
+against Open-Meteo's forecast for a future hour instead of the current reading — same weights,
+same overrides, just fed from a different point in the same hourly array. Stored under each spot's
+`predictions` key in `conditions.json`.
+
 ## Adding or editing climbing spots
 
 Edit [`data/spots.json`](data/spots.json). Each entry looks like:

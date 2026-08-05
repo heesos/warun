@@ -290,6 +290,37 @@ a {
   color: var(--band-prime-text);
 }
 
+/* Time toggle (Now / +3h / +6h / +12h) */
+
+.time-toggle {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.time-btn {
+  font: inherit;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 999px;
+  border: 1px solid var(--hairline);
+  background: var(--page);
+  color: var(--ink-secondary);
+  cursor: pointer;
+}
+
+.time-btn[aria-pressed="true"] {
+  background: var(--ink-primary);
+  color: var(--page);
+  border-color: var(--ink-primary);
+}
+
+.time-btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
 /* Sub-score bars */
 
 .sub-scores {
