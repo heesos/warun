@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Warun - Climbing Conditions</title>
+  <meta name="description" content="Live climbing condition scores for outdoor rock-climbing spots worldwide, based on real-time and recent weather." />
+  <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg" />
+  <link rel="stylesheet" href="./css/styles.css" />
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-NQQQYTXC3Q"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){ dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-NQQQYTXC3Q');
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <h1>Warun <span class="tagline-sep">-</span> <span class="tagline">Climbing Conditions</span></h1>
+      <p class="subtitle">Live rock-climbing conditions, scored from real-time and recent weather.</p>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="controls" aria-label="Filter and sort spots">
+      <input
+        type="search"
+        id="search-input"
+        class="search-input"
+        placeholder="Search spots or regions…"
+        aria-label="Search spots or regions"
+      />
+
+      <div class="band-filters" id="band-filters" role="group" aria-label="Filter by condition band">
+        <button type="button" class="chip" data-band="Prime">Prime</button>
+        <button type="button" class="chip" data-band="Excellent">Excellent</button>
+        <button type="button" class="chip" data-band="Good">Good</button>
+        <button type="button" class="chip" data-band="Fair">Fair</button>
+        <button type="button" class="chip" data-band="Poor">Poor</button>
+      </div>
+
+      <select id="sort-select" class="sort-select" aria-label="Sort spots">
+        <option value="score-desc">Score: high to low</option>
+        <option value="score-asc">Score: low to high</option>
+        <option value="name-asc">Name: A–Z</option>
+        <option value="region-asc">Region: A–Z</option>
+      </select>
+    </section>
+
+    <p id="status-line" class="status-line" role="status"></p>
+
+    <section id="spot-grid" class="spot-grid" aria-live="polite"></section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>
+        Weather data by <a href="https://open-meteo.com/" target="_blank" rel="noopener">Open-Meteo.com</a>
+        &middot; scores recompute automatically roughly every 30 minutes.
+      </p>
+      <p id="last-updated" class="last-updated"></p>
+    </div>
+  </footer>
+
+  <template id="spot-card-template">
+    <article class="spot-card">
+      <header class="spot-card__header">
+        <div>
+          <h2 class="spot-card__name"></h2>
+          <p class="spot-card__region"></p>
+          <p class="spot-card__rock-type"></p>
+        </div>
+        <div class="score-badge">
+          <span class="score-badge__value"></span>
+          <span class="score-badge__band"></span>
+        </div>
+      </header>
+      <p class="spot-card__description"></p>
+      <ul class="sub-scores" aria-label="Score breakdown"></ul>
+      <p class="spot-card__override" hidden></p>
+      <p class="spot-card__meta"></p>
+    </article>
+  </template>
+
+  <template id="sub-score-template">
+    <li class="sub-score">
+      <span class="sub-score__label"></span>
+      <span class="sub-score__bar"><span class="sub-score__fill"></span></span>
+    </li>
+  </template>
+
+  <script src="./js/app.js"></script>
+</body>
+</html>
