@@ -75,6 +75,29 @@ a {
   text-align: center;
 }
 
+.site-header .wrap {
+  position: relative;
+}
+
+.suggest-link {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--ink-secondary);
+  text-decoration: none;
+  padding: 6px 12px;
+  border-radius: 999px;
+  border: 1px solid var(--hairline);
+  background: var(--surface);
+}
+
+.suggest-link:hover {
+  color: var(--ink-primary);
+  border-color: var(--ink-primary);
+}
+
 .site-header h1 {
   margin: 0 0 8px;
   font-size: clamp(1.75rem, 1.4rem + 1.5vw, 2.5rem);
@@ -377,5 +400,11 @@ a {
 
   .sort-select {
     width: 100%;
+  }
+
+  .suggest-link {
+    position: static;
+    display: inline-block;
+    margin-bottom: 16px;
   }
 }

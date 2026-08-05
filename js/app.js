@@ -58,16 +58,56 @@
     })}`;
   }
 
+  // Strips accents (Śmietniczek -> smietniczek) so searches work regardless of
+  // diacritics, then lowercases.
+  function normalizeForSearch(str) {
+    return str.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase();
+  }
+
+  function tokenize(str) {
+    return normalizeForSearch(str).split(/[\s,-]+/).filter(Boolean);
+  }
+
+  // Standard edit distance (insertions/deletions/substitutions), single-row DP.
+  function levenshtein(a, b) {
+    if (a === b) return 0;
+    if (a.length === 0) return b.length;
+    if (b.length === 0) return a.length;
+    let prev = Array.from({ length: b.length + 1 }, (_, j) => j);
+    for (let i = 1; i <= a.length; i++) {
+      const curr = [i];
+      for (let j = 1; j <= b.length; j++) {
+        const cost = a[i - 1] === b[j - 1] ? 0 : 1;
+        curr[j] = Math.min(prev[j] + 1, curr[j - 1] + 1, prev[j - 1] + cost);
+      }
+      prev = curr;
+    }
+    return prev[b.length];
+  }
+
+  // A query token matches a target token if it's a substring (covers partial
+  // typing, e.g. "smietni") or close enough by edit distance (covers typos,
+  // e.g. "smietnicek" for "smietniczek") - tolerance scales gently with length
+  // so short words still need a near-exact match.
+  function tokenMatches(queryToken, targetToken) {
+    if (targetToken.includes(queryToken)) return true;
+    const maxDistance = Math.max(1, Math.round(queryToken.length / 4));
+    return levenshtein(queryToken, targetToken) <= maxDistance;
+  }
+
+  function matchesSearch(spot, query) {
+    if (!query) return true;
+    const queryTokens = tokenize(query);
+    const targetTokens = tokenize(`${spot.name} ${spot.region}`);
+    return queryTokens.every((qt) => targetTokens.some((tt) => tokenMatches(qt, tt)));
+  }
+
   function getFiltered() {
     return allSpots.filter((spot) => {
       if (activeBands.size > 0 && !(spot.conditions && activeBands.has(spot.conditions.band))) {
         return false;
       }
-      if (searchTerm) {
-        const haystack = `${spot.name} ${spot.region}`.toLowerCase();
-        if (!haystack.includes(searchTerm)) return false;
-      }
-      return true;
+      return matchesSearch(spot, searchTerm);
     });
   }
 
