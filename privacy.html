@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy - Warun</title>
+  <meta name="description" content="Privacy policy for Warun - Climbing Conditions." />
+  <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg" />
+  <link rel="stylesheet" href="./css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <h1><a href="./index.html">Warun</a></h1>
+      <p class="subtitle">Privacy Policy</p>
+    </div>
+  </header>
+
+  <main class="wrap legal-content">
+    <p class="updated-date">Last updated: 5 August 2026</p>
+
+    <h2>Overview</h2>
+    <p>
+      Warun ("we", "the site") is a static, informational website showing live rock-climbing
+      conditions. It has no user accounts, no forms, and no login — we don't collect any personal
+      data directly through the site itself. This page explains the small amount of data
+      third-party services process on our behalf when you visit.
+    </p>
+
+    <h2>Analytics cookies</h2>
+    <p>
+      We use Google Analytics (GA4) to understand how many people visit the site and which pages
+      they use, so we can improve it. This is optional: the Google Analytics script only loads
+      after you click "Accept" on the cookie banner. If you click "Decline", or simply ignore the
+      banner, no analytics cookies are set. You can change your choice at any time via the "Cookie
+      preferences" link in the footer.
+    </p>
+    <p>When enabled, Google Analytics may set cookies such as <code>_ga</code> and
+      <code>_ga_&lt;container-id&gt;</code> and process:
+    </p>
+    <ul>
+      <li>Pages viewed and time spent on the site</li>
+      <li>Approximate, city-level location derived from IP address (Google truncates/anonymizes the full IP)</li>
+      <li>Device, browser, and general technical information</li>
+      <li>Referring site (how you arrived at Warun)</li>
+    </ul>
+    <p>
+      This data is processed by Google under Google's own privacy terms. See
+      <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a>
+      and <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noopener">Google Analytics
+      Opt-out Browser Add-on</a> if you'd like to opt out more broadly across sites. Data is retained
+      according to our Google Analytics property settings (currently the GA4 default retention
+      period of 14 months).
+    </p>
+
+    <h2>Hosting</h2>
+    <p>
+      This site is hosted on GitHub Pages. Loading any page means your browser makes a request to
+      GitHub's servers, which — like most web hosts — may log standard technical information
+      (e.g. IP address, request time) for security and operational purposes. This is governed by
+      <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" target="_blank" rel="noopener">GitHub's Privacy Statement</a>,
+      not by us.
+    </p>
+
+    <h2>Weather data</h2>
+    <p>
+      Climbing condition scores are computed from weather data fetched server-side (via a scheduled
+      job) from <a href="https://open-meteo.com/" target="_blank" rel="noopener">Open-Meteo</a>.
+      This is a one-way fetch of public weather data and does not involve any of your personal
+      information.
+    </p>
+
+    <h2>Children's privacy</h2>
+    <p>This site is not directed at children and we do not knowingly collect data from children.</p>
+
+    <h2>Changes to this policy</h2>
+    <p>
+      We may update this page as the site evolves. Material changes will be reflected in the "Last
+      updated" date above.
+    </p>
+
+    <h2>Contact</h2>
+    <p>
+      Questions about this policy can be raised via
+      <a href="https://github.com/heesos/warun/issues" target="_blank" rel="noopener">a GitHub issue on the project repository</a>.
+    </p>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p class="legal-links">
+        <a href="./index.html">Home</a>
+        &middot; <a href="./terms.html">Terms of Use</a>
+        &middot; <a href="#" id="cookie-settings-link">Cookie preferences</a>
+      </p>
+    </div>
+  </footer>
+
+  <div id="cookie-banner" class="cookie-banner" role="dialog" aria-label="Cookie consent" hidden>
+    <div class="cookie-banner__wrap">
+      <p class="cookie-banner__text">
+        This site uses Google Analytics to see how visitors use it. No analytics cookies are set
+        unless you accept &mdash; see the Privacy Policy above for details.
+      </p>
+      <div class="cookie-banner__actions">
+        <button type="button" class="cookie-btn cookie-btn--decline" id="cookie-decline">Decline</button>
+        <button type="button" class="cookie-btn cookie-btn--accept" id="cookie-accept">Accept</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="./js/consent.js"></script>
+</body>
+</html>

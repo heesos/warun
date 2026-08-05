@@ -83,8 +83,10 @@ scheduled run).
 
 1. **Enable GitHub Pages**: repo Settings → Pages → Source: "Deploy from a branch" → Branch:
    `main`, folder `/ (root)`.
-2. **Google Analytics**: already wired up in `index.html`'s `<head>` with a real GA4 Measurement
-   ID. To point it at a different GA4 property later, swap the ID in both places it appears there.
+2. **Google Analytics**: wired up behind a cookie-consent banner in [`js/consent.js`](js/consent.js)
+   with a real GA4 Measurement ID — the `gtag.js` script only loads after a visitor clicks
+   "Accept". To point it at a different GA4 property later, swap the `GA_ID` constant at the top of
+   that file.
 
 No API keys or secrets to configure — Open-Meteo's free tier needs none.
 

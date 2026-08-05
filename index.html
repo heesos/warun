@@ -7,15 +7,6 @@
   <meta name="description" content="Live climbing condition scores for outdoor rock-climbing spots worldwide, based on real-time and recent weather." />
   <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg" />
   <link rel="stylesheet" href="./css/styles.css" />
-
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-NQQQYTXC3Q"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){ dataLayer.push(arguments); }
-    gtag('js', new Date());
-    gtag('config', 'G-NQQQYTXC3Q');
-  </script>
 </head>
 <body>
   <header class="site-header">
@@ -69,8 +60,26 @@
         &middot; scores recompute automatically roughly every 30 minutes.
       </p>
       <p id="last-updated" class="last-updated"></p>
+      <p class="legal-links">
+        <a href="./privacy.html">Privacy Policy</a>
+        &middot; <a href="./terms.html">Terms of Use</a>
+        &middot; <a href="#" id="cookie-settings-link">Cookie preferences</a>
+      </p>
     </div>
   </footer>
+
+  <div id="cookie-banner" class="cookie-banner" role="dialog" aria-label="Cookie consent" hidden>
+    <div class="cookie-banner__wrap">
+      <p class="cookie-banner__text">
+        This site uses Google Analytics to see how visitors use it. No analytics cookies are set
+        unless you accept &mdash; see the <a href="./privacy.html">Privacy Policy</a> for details.
+      </p>
+      <div class="cookie-banner__actions">
+        <button type="button" class="cookie-btn cookie-btn--decline" id="cookie-decline">Decline</button>
+        <button type="button" class="cookie-btn cookie-btn--accept" id="cookie-accept">Accept</button>
+      </div>
+    </div>
+  </div>
 
   <template id="spot-card-template">
     <article class="spot-card">
@@ -106,5 +115,6 @@
   </template>
 
   <script src="./js/app.js"></script>
+  <script src="./js/consent.js"></script>
 </body>
 </html>

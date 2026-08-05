@@ -104,6 +104,11 @@ a {
   letter-spacing: -0.02em;
 }
 
+.site-header h1 a {
+  color: inherit;
+  text-decoration: none;
+}
+
 .tagline-sep {
   color: var(--ink-muted);
   padding: 0 0.25em;
@@ -392,6 +397,94 @@ a {
   color: var(--ink-muted);
 }
 
+.legal-links {
+  margin: 12px 0 0;
+  font-size: 0.8rem;
+}
+
+/* Cookie consent banner */
+
+.cookie-banner {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 100;
+  background: var(--surface);
+  border-top: 1px solid var(--hairline);
+  box-shadow: 0 -4px 16px var(--ring);
+}
+
+.cookie-banner__wrap {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 16px 24px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 16px;
+}
+
+.cookie-banner__text {
+  flex: 1 1 320px;
+  margin: 0;
+  font-size: 0.85rem;
+  color: var(--ink-secondary);
+}
+
+.cookie-banner__actions {
+  display: flex;
+  gap: 8px;
+  flex: 0 0 auto;
+}
+
+.cookie-btn {
+  font: inherit;
+  font-size: 0.85rem;
+  font-weight: 600;
+  padding: 8px 16px;
+  border-radius: 999px;
+  cursor: pointer;
+  border: 1px solid var(--hairline);
+}
+
+.cookie-btn--decline {
+  background: var(--surface);
+  color: var(--ink-secondary);
+}
+
+.cookie-btn--accept {
+  background: var(--ink-primary);
+  color: var(--page);
+  border-color: var(--ink-primary);
+}
+
+/* Legal pages (privacy, terms) */
+
+.legal-content {
+  padding-bottom: 48px;
+}
+
+.legal-content h2 {
+  font-size: 1.15rem;
+  margin: 32px 0 8px;
+}
+
+.legal-content h2:first-child {
+  margin-top: 0;
+}
+
+.legal-content p,
+.legal-content li {
+  color: var(--ink-secondary);
+  font-size: 0.95rem;
+}
+
+.legal-content .updated-date {
+  color: var(--ink-muted);
+  font-size: 0.85rem;
+}
+
 @media (max-width: 640px) {
   .controls {
     flex-direction: column;
@@ -406,5 +499,14 @@ a {
     position: static;
     display: inline-block;
     margin-bottom: 16px;
+  }
+
+  .cookie-banner__wrap {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .cookie-banner__actions {
+    justify-content: flex-end;
   }
 }
