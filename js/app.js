@@ -25,11 +25,13 @@
   const searchInput = document.getElementById('search-input');
   const sortSelect = document.getElementById('sort-select');
   const bandFilters = document.getElementById('band-filters');
+  const areaSelect = document.getElementById('area-select');
   const cardTemplate = document.getElementById('spot-card-template');
   const subScoreTemplate = document.getElementById('sub-score-template');
 
   let allSpots = [];
   const activeBands = new Set();
+  let selectedArea = '';
   let searchTerm = '';
   let sortMode = 'score-desc';
 
@@ -98,7 +100,7 @@
   function matchesSearch(spot, query) {
     if (!query) return true;
     const queryTokens = tokenize(query);
-    const targetTokens = tokenize(`${spot.name} ${spot.region}`);
+    const targetTokens = tokenize(`${spot.name} ${spot.region} ${spot.area || ''}`);
     return queryTokens.every((qt) => targetTokens.some((tt) => tokenMatches(qt, tt)));
   }
 
@@ -107,8 +109,24 @@
       if (activeBands.size > 0 && !(spot.conditions && activeBands.has(spot.conditions.band))) {
         return false;
       }
+      if (selectedArea && spot.area !== selectedArea) {
+        return false;
+      }
       return matchesSearch(spot, searchTerm);
     });
+  }
+
+  // Area options are generated from whatever areas actually appear in the
+  // loaded spots, so the dropdown grows on its own as spots.json grows.
+  function populateAreaOptions() {
+    const areas = Array.from(new Set(allSpots.map((spot) => spot.area).filter(Boolean)))
+      .sort((a, b) => a.localeCompare(b));
+    for (const area of areas) {
+      const option = document.createElement('option');
+      option.value = area;
+      option.textContent = area;
+      areaSelect.appendChild(option);
+    }
   }
 
   function getSorted(spots) {
@@ -142,7 +160,7 @@
     grid.innerHTML = '';
 
     if (filtered.length === 0) {
-      grid.innerHTML = '<p class="empty-state">No spots match your filters. Try clearing the search or band filters.</p>';
+      grid.innerHTML = '<p class="empty-state">No spots match your filters. Try clearing the search or filters.</p>';
       statusLine.textContent = '';
       return;
     }
@@ -211,9 +229,10 @@
     node.querySelector('.spot-card__region').textContent = spot.region;
     node.querySelector('.spot-card__description').textContent = spot.description || '';
     const rockTypeEl = node.querySelector('.spot-card__rock-type');
-    rockTypeEl.textContent = spot.rockType
+    const rockTypeLabel = spot.rockType
       ? `${spot.rockType.charAt(0).toUpperCase()}${spot.rockType.slice(1)}`
       : '';
+    rockTypeEl.textContent = [rockTypeLabel, spot.area].filter(Boolean).join(' · ');
 
     const refs = {
       article,
@@ -271,6 +290,11 @@
     render();
   });
 
+  areaSelect.addEventListener('change', (event) => {
+    selectedArea = event.target.value;
+    render();
+  });
+
   searchInput.addEventListener('input', (event) => {
     searchTerm = event.target.value.trim().toLowerCase();
     render();
@@ -292,6 +316,7 @@
       ]);
       allSpots = mergeData(spots, conditions);
       renderLastUpdated(conditions.generatedAt);
+      populateAreaOptions();
       render();
     } catch (err) {
       statusLine.textContent = 'Could not load climbing conditions right now. Please try again shortly.';

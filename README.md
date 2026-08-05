@@ -64,12 +64,17 @@ Edit [`data/spots.json`](data/spots.json). Each entry looks like:
   "id": "unique-slug",
   "name": "Display name",
   "region": "Region, Country",
+  "area": "Named climbing area",
   "lat": 12.3456,
   "lon": -65.4321,
   "rockType": "granite",
   "description": "One line shown on the card."
 }
 ```
+
+`area` is optional - it's a broader grouping (e.g. "Frankenjura", "Polish Jura") shared by several
+spots, distinct from `region` which is that one spot's own village/country. Any spot with an `area`
+set gets an auto-generated entry in the "All areas" filter dropdown, and it's also searchable.
 
 `rainSensitiveHours` is optional and only needed to override the default: sandstone spots already
 get a 24-hour minimum dry-time automatically based on `rockType` (see above). Set this field
