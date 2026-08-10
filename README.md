@@ -35,8 +35,11 @@ that default per spot), and other rock types don't.
 On top of the weighted total, a handful of **safety overrides** cap the score regardless of the
 additive total — an active thunderstorm caps it at 5, currently raining caps it at 20, dangerous
 wind caps it at 15, wet sandstone caps it at 25, ice risk caps it at 15, fog/low visibility caps it
-at 30, extreme heat caps it at 20. These only ever pull the score down, never up. The exact curves,
-thresholds, and override list are in
+at 30, hot conditions (>25°C) cap it at 59, very hot conditions (>30°C) cap it at 39, extreme heat
+(>40°C) caps it at 20. These only ever pull the score down, never up. The heat caps exist because
+the weighted total alone lets a hot-but-dry-and-calm day round up to Excellent/Prime even though
+the temperature sub-score itself is already poor — a hard cap keeps the band honest regardless of
+how favorable the other three factors are. The exact curves, thresholds, and override list are in
 [`scripts/update-conditions.mjs`](scripts/update-conditions.mjs) — that file is the actual spec,
 this is just the summary.
 

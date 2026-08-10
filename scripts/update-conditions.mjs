@@ -170,6 +170,12 @@ function computeScore({ temp, humidity, windSpeed, windGust, hSinceRain, isPreci
   if (rainSensitiveHours != null && hSinceRain < rainSensitiveHours) candidates.push(['wet_sensitive_rock', 25]);
   if (temp < 0 && damp6h) candidates.push(['verglas_risk', 15]);
   if (FOG_CODES.has(weatherCode) && (visibility ?? 99999) < 1000) candidates.push(['low_visibility', 30]);
+  // Hot rock/sweaty hands hurt friction well before the "extreme_heat" cutoff, but
+  // the weighted average can still round up to Excellent/Prime on days that are
+  // also dry, low-humidity, and calm - so cap the band outright instead of relying
+  // on the temperature sub-score's weight (0.35) to pull the average down enough.
+  if (temp > 30) candidates.push(['very_hot_conditions', 39]);
+  else if (temp > 25) candidates.push(['hot_conditions', 59]);
   if (temp > 40) candidates.push(['extreme_heat', 20]);
 
   const overridesApplied = candidates.filter(([, cap]) => cap < total).map(([reason]) => reason);

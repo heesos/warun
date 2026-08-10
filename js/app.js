@@ -16,6 +16,8 @@
     wet_sensitive_rock: 'Rock likely still wet',
     verglas_risk: 'Ice risk (freezing and damp)',
     low_visibility: 'Low visibility',
+    hot_conditions: 'Hot (poor friction)',
+    very_hot_conditions: 'Very hot (poor friction)',
     extreme_heat: 'Extreme heat',
   };
 
