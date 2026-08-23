@@ -1,14 +1,14 @@
 {
-  "generatedAt": "2026-08-23T07:42:21.227Z",
+  "generatedAt": "2026-08-23T08:43:21.057Z",
   "spots": {
     "bor": {
       "score": 25,
       "band": "Fair",
       "subScores": {
         "temperature": 100,
-        "wetness": 62.5,
-        "humidity": 40,
-        "wind": 98.4
+        "wetness": 64.6,
+        "humidity": 50,
+        "wind": 100
       },
       "overridesApplied": [
         "wet_sensitive_rock"
@@ -19,115 +19,22 @@
           "band": "Fair",
           "subScores": {
             "temperature": 100,
-            "wetness": 68.8,
-            "humidity": 70,
+            "wetness": 70.8,
+            "humidity": 82,
             "wind": 100
           },
           "overridesApplied": [
             "wet_sensitive_rock"
           ],
-          "at": "2026-08-23T12:00",
+          "at": "2026-08-23T13:00",
           "raw": {
-            "temp": 15.7,
-            "humidity": 65,
-            "windKmh": 13.6,
-            "windGustKmh": 32,
+            "temp": 16.9,
+            "humidity": 58,
+            "windKmh": 14.1,
+            "windGustKmh": 33.5,
             "precipMm": 0,
-            "visibilityM": 38360,
+            "visibilityM": 40180,
             "weatherCode": 3
-          }
-        },
-        "+6h": {
-          "score": 90,
-          "band": "Prime",
-          "subScores": {
-            "temperature": 100,
-            "wetness": 75,
-            "humidity": 87,
-            "wind": 100
-          },
-          "overridesApplied": [],
-          "at": "2026-08-23T15:00",
-          "raw": {
-            "temp": 17.5,
-            "humidity": 53,
-            "windKmh": 14.8,
-            "windGustKmh": 34.2,
-            "precipMm": 0,
-            "visibilityM": 41020,
-            "weatherCode": 2
-          }
-        },
-        "+12h": {
-          "score": 83,
-          "band": "Prime",
-          "subScores": {
-            "temperature": 100,
-            "wetness": 81.3,
-            "humidity": 62,
-            "wind": 74.1
-          },
-          "overridesApplied": [],
-          "at": "2026-08-23T21:00",
-          "raw": {
-            "temp": 12.6,
-            "humidity": 69,
-            "windKmh": 3.6,
-            "windGustKmh": 10.1,
-            "precipMm": 0,
-            "visibilityM": 39860,
-            "weatherCode": 0
-          }
-        }
-      },
-      "raw": {
-        "temp": 13.2,
-        "feelsLike": 11.4,
-        "humidity": 80,
-        "windKmh": 11.8,
-        "windGustKmh": 27.4,
-        "precipMm": 0,
-        "visibilityM": 27960,
-        "weatherCode": 2,
-        "hoursSinceRain": 18,
-        "observedAt": "2026-08-23T09:30",
-        "timezone": "Europe/Prague"
-      }
-    },
-    "kamienna-gora": {
-      "score": 25,
-      "band": "Fair",
-      "subScores": {
-        "temperature": 100,
-        "wetness": 62.5,
-        "humidity": 56,
-        "wind": 79.2
-      },
-      "overridesApplied": [
-        "wet_sensitive_rock"
-      ],
-      "predictions": {
-        "+3h": {
-          "score": 25,
-          "band": "Fair",
-          "subScores": {
-            "temperature": 100,
-            "wetness": 68.8,
-            "humidity": 81,
-            "wind": 100
-          },
-          "overridesApplied": [
-            "wet_sensitive_rock"
-          ],
-          "at": "2026-08-23T12:00",
-          "raw": {
-            "temp": 16.4,
-            "humidity": 59,
-            "windKmh": 13.3,
-            "windGustKmh": 31,
-            "precipMm": 0,
-            "visibilityM": 40120,
-            "weatherCode": 2
           }
         },
         "+6h": {
@@ -135,1015 +42,20 @@
           "band": "Prime",
           "subScores": {
             "temperature": 100,
-            "wetness": 75,
+            "wetness": 76,
             "humidity": 89,
             "wind": 100
           },
           "overridesApplied": [],
-          "at": "2026-08-23T15:00",
+          "at": "2026-08-23T16:00",
           "raw": {
-            "temp": 17.9,
+            "temp": 17.8,
             "humidity": 51,
-            "windKmh": 14.2,
-            "windGustKmh": 33.5,
+            "windKmh": 12.7,
+            "windGustKmh": 32.4,
             "precipMm": 0,
-            "visibilityM": 41220,
-            "weatherCode": 2
-          }
-        },
-        "+12h": {
-          "score": 82,
-          "band": "Prime",
-          "subScores": {
-            "temperature": 100,
-            "wetness": 81.3,
-            "humidity": 52,
-            "wind": 76.1
-          },
-          "overridesApplied": [],
-          "at": "2026-08-23T21:00",
-          "raw": {
-            "temp": 11.5,
-            "humidity": 74,
-            "windKmh": 6.2,
-            "windGustKmh": 11.5,
-            "precipMm": 0,
-            "visibilityM": 37240,
-            "weatherCode": 1
-          }
-        }
-      },
-      "raw": {
-        "temp": 14.8,
-        "feelsLike": 14,
-        "humidity": 72,
-        "windKmh": 4.8,
-        "windGustKmh": 13.7,
-        "precipMm": 0,
-        "visibilityM": 35140,
-        "weatherCode": 2,
-        "hoursSinceRain": 18,
-        "observedAt": "2026-08-23T09:30",
-        "timezone": "Europe/Warsaw"
-      }
-    },
-    "smietniczek": {
-      "score": 82,
-      "band": "Prime",
-      "subScores": {
-        "temperature": 100,
-        "wetness": 62.5,
-        "humidity": 60,
-        "wind": 99.8
-      },
-      "overridesApplied": [],
-      "predictions": {
-        "+3h": {
-          "score": 87,
-          "band": "Prime",
-          "subScores": {
-            "temperature": 100,
-            "wetness": 68.8,
-            "humidity": 76,
-            "wind": 100
-          },
-          "overridesApplied": [],
-          "at": "2026-08-23T12:00",
-          "raw": {
-            "temp": 16.7,
-            "humidity": 62,
-            "windKmh": 13.4,
-            "windGustKmh": 33.1,
-            "precipMm": 0,
-            "visibilityM": 39360,
+            "visibilityM": 41300,
             "weatherCode": 3
-          }
-        },
-        "+6h": {
-          "score": 91,
-          "band": "Prime",
-          "subScores": {
-            "temperature": 100,
-            "wetness": 75,
-            "humidity": 90,
-            "wind": 100
-          },
-          "overridesApplied": [],
-          "at": "2026-08-23T15:00",
-          "raw": {
-            "temp": 17.9,
-            "humidity": 50,
-            "windKmh": 13.9,
-            "windGustKmh": 36.4,
-            "precipMm": 0,
-            "visibilityM": 41520,
-            "weatherCode": 2
-          }
-        },
-        "+12h": {
-          "score": 82,
-          "band": "Prime",
-          "subScores": {
-            "temperature": 100,
-            "wetness": 81.3,
-            "humidity": 56,
-            "wind": 74.6
-          },
-          "overridesApplied": [],
-          "at": "2026-08-23T21:00",
-          "raw": {
-            "temp": 11.9,
-            "humidity": 72,
-            "windKmh": 5.7,
-            "windGustKmh": 10.4,
-            "precipMm": 0,
-            "visibilityM": 38100,
-            "weatherCode": 0
-          }
-        }
-      },
-      "raw": {
-        "temp": 14.5,
-        "feelsLike": 12.3,
-        "humidity": 70,
-        "windKmh": 13,
-        "windGustKmh": 28.4,
-        "precipMm": 0,
-        "visibilityM": 36660,
-        "weatherCode": 2,
-        "hoursSinceRain": 18,
-        "observedAt": "2026-08-23T09:30",
-        "timezone": "Europe/Warsaw"
-      }
-    },
-    "jerzmanice": {
-      "score": 25,
-      "band": "Fair",
-      "subScores": {
-        "temperature": 100,
-        "wetness": 60.4,
-        "humidity": 60,
-        "wind": 100
-      },
-      "overridesApplied": [
-        "wet_sensitive_rock"
-      ],
-      "predictions": {
-        "+3h": {
-          "score": 25,
-          "band": "Fair",
-          "subScores": {
-            "temperature": 100,
-            "wetness": 66.7,
-            "humidity": 80,
-            "wind": 100
-          },
-          "overridesApplied": [
-            "wet_sensitive_rock"
-          ],
-          "at": "2026-08-23T12:00",
-          "raw": {
-            "temp": 17.4,
-            "humidity": 60,
-            "windKmh": 17.6,
-            "windGustKmh": 37.4,
-            "precipMm": 0,
-            "visibilityM": 39460,
-            "weatherCode": 2
-          }
-        },
-        "+6h": {
-          "score": 25,
-          "band": "Fair",
-          "subScores": {
-            "temperature": 94.5,
-            "wetness": 72.9,
-            "humidity": 93,
-            "wind": 100
-          },
-          "overridesApplied": [
-            "wet_sensitive_rock"
-          ],
-          "at": "2026-08-23T15:00",
-          "raw": {
-            "temp": 19.1,
-            "humidity": 47,
-            "windKmh": 19.8,
-            "windGustKmh": 37.8,
-            "precipMm": 0,
-            "visibilityM": 41580,
-            "weatherCode": 2
-          }
-        },
-        "+12h": {
-          "score": 86,
-          "band": "Prime",
-          "subScores": {
-            "temperature": 100,
-            "wetness": 80.2,
-            "humidity": 74,
-            "wind": 80.7
-          },
-          "overridesApplied": [],
-          "at": "2026-08-23T21:00",
-          "raw": {
-            "temp": 14.1,
-            "humidity": 63,
-            "windKmh": 6.5,
-            "windGustKmh": 14.8,
-            "precipMm": 0,
-            "visibilityM": 39900,
-            "weatherCode": 1
-          }
-        }
-      },
-      "raw": {
-        "temp": 15.1,
-        "feelsLike": 12.3,
-        "humidity": 70,
-        "windKmh": 18.1,
-        "windGustKmh": 34.6,
-        "precipMm": 0,
-        "visibilityM": 35800,
-        "weatherCode": 2,
-        "hoursSinceRain": 17,
-        "observedAt": "2026-08-23T09:30",
-        "timezone": "Europe/Warsaw"
-      }
-    },
-    "sokoliki": {
-      "score": 81,
-      "band": "Prime",
-      "subScores": {
-        "temperature": 100,
-        "wetness": 62.5,
-        "humidity": 56,
-        "wind": 100
-      },
-      "overridesApplied": [],
-      "predictions": {
-        "+3h": {
-          "score": 88,
-          "band": "Prime",
-          "subScores": {
-            "temperature": 100,
-            "wetness": 68.8,
-            "humidity": 84,
-            "wind": 100
-          },
-          "overridesApplied": [],
-          "at": "2026-08-23T12:00",
-          "raw": {
-            "temp": 16.4,
-            "humidity": 56,
-            "windKmh": 14.8,
-            "windGustKmh": 42.5,
-            "precipMm": 0,
-            "visibilityM": 40560,
-            "weatherCode": 3
-          }
-        },
-        "+6h": {
-          "score": 91,
-          "band": "Prime",
-          "subScores": {
-            "temperature": 100,
-            "wetness": 75,
-            "humidity": 90,
-            "wind": 100
-          },
-          "overridesApplied": [],
-          "at": "2026-08-23T15:00",
-          "raw": {
-            "temp": 17.7,
-            "humidity": 50,
-            "windKmh": 15.5,
-            "windGustKmh": 44.3,
-            "precipMm": 0,
-            "visibilityM": 41280,
-            "weatherCode": 2
-          }
-        },
-        "+12h": {
-          "score": 85,
-          "band": "Prime",
-          "subScores": {
-            "temperature": 100,
-            "wetness": 81.3,
-            "humidity": 56,
-            "wind": 88.3
-          },
-          "overridesApplied": [],
-          "at": "2026-08-23T21:00",
-          "raw": {
-            "temp": 11.8,
-            "humidity": 72,
-            "windKmh": 5.9,
-            "windGustKmh": 20.2,
-            "precipMm": 0,
-            "visibilityM": 38020,
-            "weatherCode": 0
-          }
-        }
-      },
-      "raw": {
-        "temp": 13.9,
-        "feelsLike": 12,
-        "humidity": 72,
-        "windKmh": 11.2,
-        "windGustKmh": 31.3,
-        "precipMm": 0,
-        "visibilityM": 35320,
-        "weatherCode": 2,
-        "hoursSinceRain": 18,
-        "observedAt": "2026-08-23T09:30",
-        "timezone": "Europe/Warsaw"
-      }
-    },
-    "podlesice": {
-      "score": 79,
-      "band": "Excellent",
-      "subScores": {
-        "temperature": 100,
-        "wetness": 56.3,
-        "humidity": 54,
-        "wind": 100
-      },
-      "overridesApplied": [],
-      "predictions": {
-        "+3h": {
-          "score": 86,
-          "band": "Prime",
-          "subScores": {
-            "temperature": 100,
-            "wetness": 62.5,
-            "humidity": 80,
-            "wind": 100
-          },
-          "overridesApplied": [],
-          "at": "2026-08-23T12:00",
-          "raw": {
-            "temp": 18,
-            "humidity": 60,
-            "windKmh": 15.1,
-            "windGustKmh": 32.8,
-            "precipMm": 0,
-            "visibilityM": 50000,
-            "weatherCode": 0
-          }
-        },
-        "+6h": {
-          "score": 87,
-          "band": "Prime",
-          "subScores": {
-            "temperature": 91.5,
-            "wetness": 68.8,
-            "humidity": 96,
-            "wind": 100
-          },
-          "overridesApplied": [],
-          "at": "2026-08-23T15:00",
-          "raw": {
-            "temp": 19.7,
-            "humidity": 44,
-            "windKmh": 15.8,
-            "windGustKmh": 35.3,
-            "precipMm": 0,
-            "visibilityM": 25560,
-            "weatherCode": 0
-          }
-        },
-        "+12h": {
-          "score": 82,
-          "band": "Prime",
-          "subScores": {
-            "temperature": 100,
-            "wetness": 78.1,
-            "humidity": 60,
-            "wind": 77.6
-          },
-          "overridesApplied": [],
-          "at": "2026-08-23T21:00",
-          "raw": {
-            "temp": 14.1,
-            "humidity": 70,
-            "windKmh": 7.9,
-            "windGustKmh": 12.6,
-            "precipMm": 0,
-            "visibilityM": 14680,
-            "weatherCode": 1
-          }
-        }
-      },
-      "raw": {
-        "temp": 15.4,
-        "feelsLike": 13.6,
-        "humidity": 73,
-        "windKmh": 14,
-        "windGustKmh": 29.9,
-        "precipMm": 0,
-        "visibilityM": 13600,
-        "weatherCode": 0,
-        "hoursSinceRain": 15,
-        "observedAt": "2026-08-23T09:30",
-        "timezone": "Europe/Warsaw"
-      }
-    },
-    "morsko": {
-      "score": 80,
-      "band": "Prime",
-      "subScores": {
-        "temperature": 100,
-        "wetness": 56.3,
-        "humidity": 58,
-        "wind": 100
-      },
-      "overridesApplied": [],
-      "predictions": {
-        "+3h": {
-          "score": 86,
-          "band": "Prime",
-          "subScores": {
-            "temperature": 100,
-            "wetness": 62.5,
-            "humidity": 81,
-            "wind": 100
-          },
-          "overridesApplied": [],
-          "at": "2026-08-23T12:00",
-          "raw": {
-            "temp": 18,
-            "humidity": 59,
-            "windKmh": 13.3,
-            "windGustKmh": 34.6,
-            "precipMm": 0,
-            "visibilityM": 50000,
-            "weatherCode": 0
-          }
-        },
-        "+6h": {
-          "score": 87,
-          "band": "Prime",
-          "subScores": {
-            "temperature": 92.5,
-            "wetness": 68.8,
-            "humidity": 94,
-            "wind": 100
-          },
-          "overridesApplied": [],
-          "at": "2026-08-23T15:00",
-          "raw": {
-            "temp": 19.5,
-            "humidity": 46,
-            "windKmh": 14.4,
-            "windGustKmh": 37.1,
-            "precipMm": 0,
-            "visibilityM": 24800,
-            "weatherCode": 0
-          }
-        },
-        "+12h": {
-          "score": 83,
-          "band": "Prime",
-          "subScores": {
-            "temperature": 100,
-            "wetness": 78.1,
-            "humidity": 62,
-            "wind": 78.6
-          },
-          "overridesApplied": [],
-          "at": "2026-08-23T21:00",
-          "raw": {
-            "temp": 14.7,
-            "humidity": 69,
-            "windKmh": 7.2,
-            "windGustKmh": 13.3,
-            "precipMm": 0,
-            "visibilityM": 15220,
-            "weatherCode": 1
-          }
-        }
-      },
-      "raw": {
-        "temp": 15.6,
-        "feelsLike": 13.9,
-        "humidity": 71,
-        "windKmh": 12.2,
-        "windGustKmh": 31.3,
-        "precipMm": 0,
-        "visibilityM": 14300,
-        "weatherCode": 0,
-        "hoursSinceRain": 15,
-        "observedAt": "2026-08-23T09:30",
-        "timezone": "Europe/Warsaw"
-      }
-    },
-    "rzedkowice": {
-      "score": 79,
-      "band": "Excellent",
-      "subScores": {
-        "temperature": 100,
-        "wetness": 56.3,
-        "humidity": 56,
-        "wind": 100
-      },
-      "overridesApplied": [],
-      "predictions": {
-        "+3h": {
-          "score": 86,
-          "band": "Prime",
-          "subScores": {
-            "temperature": 100,
-            "wetness": 62.5,
-            "humidity": 81,
-            "wind": 100
-          },
-          "overridesApplied": [],
-          "at": "2026-08-23T12:00",
-          "raw": {
-            "temp": 17.9,
-            "humidity": 59,
-            "windKmh": 15.1,
-            "windGustKmh": 36,
-            "precipMm": 0,
-            "visibilityM": 50000,
-            "weatherCode": 0
-          }
-        },
-        "+6h": {
-          "score": 87,
-          "band": "Prime",
-          "subScores": {
-            "temperature": 92.5,
-            "wetness": 68.8,
-            "humidity": 94,
-            "wind": 100
-          },
-          "overridesApplied": [],
-          "at": "2026-08-23T15:00",
-          "raw": {
-            "temp": 19.5,
-            "humidity": 46,
-            "windKmh": 15.8,
-            "windGustKmh": 37.4,
-            "precipMm": 0,
-            "visibilityM": 25020,
-            "weatherCode": 0
-          }
-        },
-        "+12h": {
-          "score": 82,
-          "band": "Prime",
-          "subScores": {
-            "temperature": 100,
-            "wetness": 78.1,
-            "humidity": 60,
-            "wind": 76.7
-          },
-          "overridesApplied": [],
-          "at": "2026-08-23T21:00",
-          "raw": {
-            "temp": 14.3,
-            "humidity": 70,
-            "windKmh": 6.8,
-            "windGustKmh": 11.9,
-            "precipMm": 0,
-            "visibilityM": 14620,
-            "weatherCode": 2
-          }
-        }
-      },
-      "raw": {
-        "temp": 15.4,
-        "feelsLike": 13.7,
-        "humidity": 72,
-        "windKmh": 13,
-        "windGustKmh": 30.2,
-        "precipMm": 0,
-        "visibilityM": 13780,
-        "weatherCode": 0,
-        "hoursSinceRain": 15,
-        "observedAt": "2026-08-23T09:30",
-        "timezone": "Europe/Warsaw"
-      }
-    },
-    "dolina-bedkowska": {
-      "score": 76,
-      "band": "Excellent",
-      "subScores": {
-        "temperature": 100,
-        "wetness": 52.1,
-        "humidity": 48,
-        "wind": 93.3
-      },
-      "overridesApplied": [],
-      "predictions": {
-        "+3h": {
-          "score": 85,
-          "band": "Prime",
-          "subScores": {
-            "temperature": 100,
-            "wetness": 58.3,
-            "humidity": 83,
-            "wind": 98.8
-          },
-          "overridesApplied": [],
-          "at": "2026-08-23T12:00",
-          "raw": {
-            "temp": 17.5,
-            "humidity": 57,
-            "windKmh": 10.1,
-            "windGustKmh": 27.7,
-            "precipMm": 0,
-            "visibilityM": 50000,
-            "weatherCode": 3
-          }
-        },
-        "+6h": {
-          "score": 86,
-          "band": "Prime",
-          "subScores": {
-            "temperature": 94.5,
-            "wetness": 64.6,
-            "humidity": 92,
-            "wind": 100
-          },
-          "overridesApplied": [],
-          "at": "2026-08-23T15:00",
-          "raw": {
-            "temp": 19.1,
-            "humidity": 48,
-            "windKmh": 8.6,
-            "windGustKmh": 29.2,
-            "precipMm": 0,
-            "visibilityM": 23700,
-            "weatherCode": 1
-          }
-        },
-        "+12h": {
-          "score": 82,
-          "band": "Prime",
-          "subScores": {
-            "temperature": 100,
-            "wetness": 76,
-            "humidity": 50,
-            "wind": 87.2
-          },
-          "overridesApplied": [],
-          "at": "2026-08-23T21:00",
-          "raw": {
-            "temp": 14.3,
-            "humidity": 75,
-            "windKmh": 9.7,
-            "windGustKmh": 19.4,
-            "precipMm": 0,
-            "visibilityM": 12820,
-            "weatherCode": 0
-          }
-        }
-      },
-      "raw": {
-        "temp": 14.5,
-        "feelsLike": 13.3,
-        "humidity": 76,
-        "windKmh": 9,
-        "windGustKmh": 23.8,
-        "precipMm": 0,
-        "visibilityM": 12580,
-        "weatherCode": 0,
-        "hoursSinceRain": 13,
-        "observedAt": "2026-08-23T09:30",
-        "timezone": "Europe/Warsaw"
-      }
-    },
-    "mirow": {
-      "score": 81,
-      "band": "Prime",
-      "subScores": {
-        "temperature": 100,
-        "wetness": 56.3,
-        "humidity": 64,
-        "wind": 100
-      },
-      "overridesApplied": [],
-      "predictions": {
-        "+3h": {
-          "score": 86,
-          "band": "Prime",
-          "subScores": {
-            "temperature": 97,
-            "wetness": 62.5,
-            "humidity": 87,
-            "wind": 100
-          },
-          "overridesApplied": [],
-          "at": "2026-08-23T12:00",
-          "raw": {
-            "temp": 18.6,
-            "humidity": 53,
-            "windKmh": 18.7,
-            "windGustKmh": 35.3,
-            "precipMm": 0,
-            "visibilityM": 50000,
-            "weatherCode": 0
-          }
-        },
-        "+6h": {
-          "score": 87,
-          "band": "Prime",
-          "subScores": {
-            "temperature": 91,
-            "wetness": 68.8,
-            "humidity": 95,
-            "wind": 100
-          },
-          "overridesApplied": [],
-          "at": "2026-08-23T15:00",
-          "raw": {
-            "temp": 19.8,
-            "humidity": 45,
-            "windKmh": 18.7,
-            "windGustKmh": 36,
-            "precipMm": 0,
-            "visibilityM": 25540,
-            "weatherCode": 0
-          }
-        },
-        "+12h": {
-          "score": 83,
-          "band": "Prime",
-          "subScores": {
-            "temperature": 100,
-            "wetness": 78.1,
-            "humidity": 64,
-            "wind": 78.8
-          },
-          "overridesApplied": [],
-          "at": "2026-08-23T21:00",
-          "raw": {
-            "temp": 14,
-            "humidity": 68,
-            "windKmh": 9.4,
-            "windGustKmh": 13.3,
-            "precipMm": 0,
-            "visibilityM": 15720,
-            "weatherCode": 1
-          }
-        }
-      },
-      "raw": {
-        "temp": 15.8,
-        "feelsLike": 13.2,
-        "humidity": 68,
-        "windKmh": 17.6,
-        "windGustKmh": 32,
-        "precipMm": 0,
-        "visibilityM": 15820,
-        "weatherCode": 0,
-        "hoursSinceRain": 15,
-        "observedAt": "2026-08-23T09:30",
-        "timezone": "Europe/Warsaw"
-      }
-    },
-    "toczek": {
-      "score": 25,
-      "band": "Fair",
-      "subScores": {
-        "temperature": 100,
-        "wetness": 62.5,
-        "humidity": 48,
-        "wind": 96.8
-      },
-      "overridesApplied": [
-        "wet_sensitive_rock"
-      ],
-      "predictions": {
-        "+3h": {
-          "score": 25,
-          "band": "Fair",
-          "subScores": {
-            "temperature": 100,
-            "wetness": 68.8,
-            "humidity": 66,
-            "wind": 100
-          },
-          "overridesApplied": [
-            "wet_sensitive_rock"
-          ],
-          "at": "2026-08-23T12:00",
-          "raw": {
-            "temp": 15.6,
-            "humidity": 67,
-            "windKmh": 16.2,
-            "windGustKmh": 30.6,
-            "precipMm": 0,
-            "visibilityM": 37660,
-            "weatherCode": 2
-          }
-        },
-        "+6h": {
-          "score": 90,
-          "band": "Prime",
-          "subScores": {
-            "temperature": 100,
-            "wetness": 75,
-            "humidity": 86,
-            "wind": 100
-          },
-          "overridesApplied": [],
-          "at": "2026-08-23T15:00",
-          "raw": {
-            "temp": 17.4,
-            "humidity": 54,
-            "windKmh": 18.3,
-            "windGustKmh": 33.1,
-            "precipMm": 0,
-            "visibilityM": 40940,
-            "weatherCode": 3
-          }
-        },
-        "+12h": {
-          "score": 81,
-          "band": "Prime",
-          "subScores": {
-            "temperature": 100,
-            "wetness": 81.3,
-            "humidity": 52,
-            "wind": 72.6
-          },
-          "overridesApplied": [],
-          "at": "2026-08-23T21:00",
-          "raw": {
-            "temp": 11.2,
-            "humidity": 74,
-            "windKmh": 4.4,
-            "windGustKmh": 9,
-            "precipMm": 0,
-            "visibilityM": 37340,
-            "weatherCode": 0
-          }
-        }
-      },
-      "raw": {
-        "temp": 13.7,
-        "feelsLike": 11.5,
-        "humidity": 76,
-        "windKmh": 14.7,
-        "windGustKmh": 26.3,
-        "precipMm": 0,
-        "visibilityM": 32840,
-        "weatherCode": 2,
-        "hoursSinceRain": 18,
-        "observedAt": "2026-08-23T09:30",
-        "timezone": "Europe/Warsaw"
-      }
-    },
-    "adamow": {
-      "score": 25,
-      "band": "Fair",
-      "subScores": {
-        "temperature": 100,
-        "wetness": 56.3,
-        "humidity": 62,
-        "wind": 98.4
-      },
-      "overridesApplied": [
-        "wet_sensitive_rock"
-      ],
-      "predictions": {
-        "+3h": {
-          "score": 25,
-          "band": "Fair",
-          "subScores": {
-            "temperature": 95.5,
-            "wetness": 62.5,
-            "humidity": 85,
-            "wind": 100
-          },
-          "overridesApplied": [
-            "wet_sensitive_rock"
-          ],
-          "at": "2026-08-23T12:00",
-          "raw": {
-            "temp": 18.9,
-            "humidity": 55,
-            "windKmh": 11.2,
-            "windGustKmh": 32,
-            "precipMm": 0,
-            "visibilityM": 50000,
-            "weatherCode": 1
-          }
-        },
-        "+6h": {
-          "score": 25,
-          "band": "Fair",
-          "subScores": {
-            "temperature": 89,
-            "wetness": 68.8,
-            "humidity": 94,
-            "wind": 100
-          },
-          "overridesApplied": [
-            "wet_sensitive_rock"
-          ],
-          "at": "2026-08-23T15:00",
-          "raw": {
-            "temp": 20.2,
-            "humidity": 46,
-            "windKmh": 11.9,
-            "windGustKmh": 33.5,
-            "precipMm": 0,
-            "visibilityM": 25200,
-            "weatherCode": 3
-          }
-        },
-        "+12h": {
-          "score": 82,
-          "band": "Prime",
-          "subScores": {
-            "temperature": 100,
-            "wetness": 78.1,
-            "humidity": 60,
-            "wind": 72.6
-          },
-          "overridesApplied": [],
-          "at": "2026-08-23T21:00",
-          "raw": {
-            "temp": 14.5,
-            "humidity": 70,
-            "windKmh": 5.4,
-            "windGustKmh": 9,
-            "precipMm": 0,
-            "visibilityM": 15040,
-            "weatherCode": 0
-          }
-        }
-      },
-      "raw": {
-        "temp": 16.3,
-        "feelsLike": 15,
-        "humidity": 69,
-        "windKmh": 9.7,
-        "windGustKmh": 27.4,
-        "precipMm": 0,
-        "visibilityM": 15640,
-        "weatherCode": 0,
-        "hoursSinceRain": 15,
-        "observedAt": "2026-08-23T09:30",
-        "timezone": "Europe/Warsaw"
-      }
-    },
-    "weissenstein": {
-      "score": 71,
-      "band": "Excellent",
-      "subScores": {
-        "temperature": 100,
-        "wetness": 64.6,
-        "humidity": 26,
-        "wind": 70
-      },
-      "overridesApplied": [],
-      "predictions": {
-        "+3h": {
-          "score": 85,
-          "band": "Prime",
-          "subScores": {
-            "temperature": 100,
-            "wetness": 70.8,
-            "humidity": 76,
-            "wind": 85.2
-          },
-          "overridesApplied": [],
-          "at": "2026-08-23T12:00",
-          "raw": {
-            "temp": 16.9,
-            "humidity": 62,
-            "windKmh": 7.5,
-            "windGustKmh": 18,
-            "precipMm": 0,
-            "visibilityM": 39520,
-            "weatherCode": 2
-          }
-        },
-        "+6h": {
-          "score": 88,
-          "band": "Prime",
-          "subScores": {
-            "temperature": 95.5,
-            "wetness": 76,
-            "humidity": 90,
-            "wind": 90.8
-          },
-          "overridesApplied": [],
-          "at": "2026-08-23T15:00",
-          "raw": {
-            "temp": 18.9,
-            "humidity": 50,
-            "windKmh": 9.1,
-            "windGustKmh": 22,
-            "precipMm": 0,
-            "visibilityM": 41400,
-            "weatherCode": 2
           }
         },
         "+12h": {
@@ -1153,85 +65,716 @@
             "temperature": 100,
             "wetness": 82.3,
             "humidity": 60,
-            "wind": 70.6
+            "wind": 70
           },
           "overridesApplied": [],
-          "at": "2026-08-23T21:00",
+          "at": "2026-08-23T22:00",
           "raw": {
-            "temp": 13.2,
+            "temp": 11.9,
             "humidity": 70,
-            "windKmh": 3.3,
-            "windGustKmh": 7.6,
+            "windKmh": 2.3,
+            "windGustKmh": 5.4,
             "precipMm": 0,
-            "visibilityM": 39780,
+            "visibilityM": 39920,
+            "weatherCode": 1
+          }
+        }
+      },
+      "raw": {
+        "temp": 14.2,
+        "feelsLike": 12.3,
+        "humidity": 75,
+        "windKmh": 13,
+        "windGustKmh": 31,
+        "precipMm": 0,
+        "visibilityM": 31780,
+        "weatherCode": 2,
+        "hoursSinceRain": 19,
+        "observedAt": "2026-08-23T10:30",
+        "timezone": "Europe/Prague"
+      }
+    },
+    "kamienna-gora": {
+      "score": 25,
+      "band": "Fair",
+      "subScores": {
+        "temperature": 100,
+        "wetness": 64.6,
+        "humidity": 74,
+        "wind": 91.2
+      },
+      "overridesApplied": [
+        "wet_sensitive_rock"
+      ],
+      "predictions": {
+        "+3h": {
+          "score": 25,
+          "band": "Fair",
+          "subScores": {
+            "temperature": 100,
+            "wetness": 70.8,
+            "humidity": 84,
+            "wind": 100
+          },
+          "overridesApplied": [
+            "wet_sensitive_rock"
+          ],
+          "at": "2026-08-23T13:00",
+          "raw": {
+            "temp": 17,
+            "humidity": 56,
+            "windKmh": 13.7,
+            "windGustKmh": 31.3,
+            "precipMm": 0,
+            "visibilityM": 40680,
+            "weatherCode": 3
+          }
+        },
+        "+6h": {
+          "score": 91,
+          "band": "Prime",
+          "subScores": {
+            "temperature": 98.5,
+            "wetness": 76,
+            "humidity": 91,
+            "wind": 100
+          },
+          "overridesApplied": [],
+          "at": "2026-08-23T16:00",
+          "raw": {
+            "temp": 18.3,
+            "humidity": 49,
+            "windKmh": 13.7,
+            "windGustKmh": 32,
+            "precipMm": 0,
+            "visibilityM": 41540,
+            "weatherCode": 1
+          }
+        },
+        "+12h": {
+          "score": 82,
+          "band": "Prime",
+          "subScores": {
+            "temperature": 100,
+            "wetness": 82.3,
+            "humidity": 50,
+            "wind": 77.6
+          },
+          "overridesApplied": [],
+          "at": "2026-08-23T22:00",
+          "raw": {
+            "temp": 10.6,
+            "humidity": 75,
+            "windKmh": 6.4,
+            "windGustKmh": 12.6,
+            "precipMm": 0,
+            "visibilityM": 36400,
+            "weatherCode": 1
+          }
+        }
+      },
+      "raw": {
+        "temp": 15.8,
+        "feelsLike": 14.3,
+        "humidity": 63,
+        "windKmh": 9.5,
+        "windGustKmh": 22.3,
+        "precipMm": 0,
+        "visibilityM": 39040,
+        "weatherCode": 2,
+        "hoursSinceRain": 19,
+        "observedAt": "2026-08-23T10:30",
+        "timezone": "Europe/Warsaw"
+      }
+    },
+    "smietniczek": {
+      "score": 84,
+      "band": "Prime",
+      "subScores": {
+        "temperature": 100,
+        "wetness": 64.6,
+        "humidity": 70,
+        "wind": 100
+      },
+      "overridesApplied": [],
+      "predictions": {
+        "+3h": {
+          "score": 88,
+          "band": "Prime",
+          "subScores": {
+            "temperature": 100,
+            "wetness": 70.8,
+            "humidity": 80,
+            "wind": 100
+          },
+          "overridesApplied": [],
+          "at": "2026-08-23T13:00",
+          "raw": {
+            "temp": 16.9,
+            "humidity": 60,
+            "windKmh": 15.3,
+            "windGustKmh": 34.2,
+            "precipMm": 0,
+            "visibilityM": 39700,
+            "weatherCode": 2
+          }
+        },
+        "+6h": {
+          "score": 91,
+          "band": "Prime",
+          "subScores": {
+            "temperature": 100,
+            "wetness": 76,
+            "humidity": 90,
+            "wind": 100
+          },
+          "overridesApplied": [],
+          "at": "2026-08-23T16:00",
+          "raw": {
+            "temp": 17.9,
+            "humidity": 50,
+            "windKmh": 14.6,
+            "windGustKmh": 32.8,
+            "precipMm": 0,
+            "visibilityM": 41460,
+            "weatherCode": 2
+          }
+        },
+        "+12h": {
+          "score": 81,
+          "band": "Prime",
+          "subScores": {
+            "temperature": 100,
+            "wetness": 82.3,
+            "humidity": 48,
+            "wind": 77.6
+          },
+          "overridesApplied": [],
+          "at": "2026-08-23T22:00",
+          "raw": {
+            "temp": 11.5,
+            "humidity": 76,
+            "windKmh": 6.7,
+            "windGustKmh": 12.6,
+            "precipMm": 0,
+            "visibilityM": 36220,
             "weatherCode": 0
           }
         }
       },
       "raw": {
-        "temp": 12.7,
-        "feelsLike": 12.8,
-        "humidity": 87,
-        "windKmh": 0.5,
-        "windGustKmh": 4.3,
+        "temp": 15.3,
+        "feelsLike": 12.9,
+        "humidity": 65,
+        "windKmh": 14.1,
+        "windGustKmh": 31.3,
         "precipMm": 0,
-        "visibilityM": 16900,
-        "weatherCode": 1,
+        "visibilityM": 38360,
+        "weatherCode": 3,
         "hoursSinceRain": 19,
-        "observedAt": "2026-08-23T09:30",
-        "timezone": "Europe/Berlin"
+        "observedAt": "2026-08-23T10:30",
+        "timezone": "Europe/Warsaw"
       }
     },
-    "krottenseer-turm": {
-      "score": 69,
-      "band": "Excellent",
+    "jerzmanice": {
+      "score": 25,
+      "band": "Fair",
       "subScores": {
         "temperature": 100,
         "wetness": 62.5,
-        "humidity": 16,
-        "wind": 70
+        "humidity": 70,
+        "wind": 100
+      },
+      "overridesApplied": [
+        "wet_sensitive_rock"
+      ],
+      "predictions": {
+        "+3h": {
+          "score": 25,
+          "band": "Fair",
+          "subScores": {
+            "temperature": 99,
+            "wetness": 68.8,
+            "humidity": 85,
+            "wind": 100
+          },
+          "overridesApplied": [
+            "wet_sensitive_rock"
+          ],
+          "at": "2026-08-23T13:00",
+          "raw": {
+            "temp": 18.2,
+            "humidity": 55,
+            "windKmh": 18.6,
+            "windGustKmh": 36.7,
+            "precipMm": 0,
+            "visibilityM": 40520,
+            "weatherCode": 2
+          }
+        },
+        "+6h": {
+          "score": 90,
+          "band": "Prime",
+          "subScores": {
+            "temperature": 94.5,
+            "wetness": 75,
+            "humidity": 94,
+            "wind": 100
+          },
+          "overridesApplied": [],
+          "at": "2026-08-23T16:00",
+          "raw": {
+            "temp": 19.1,
+            "humidity": 46,
+            "windKmh": 18.6,
+            "windGustKmh": 38.2,
+            "precipMm": 0,
+            "visibilityM": 41780,
+            "weatherCode": 2
+          }
+        },
+        "+12h": {
+          "score": 83,
+          "band": "Prime",
+          "subScores": {
+            "temperature": 100,
+            "wetness": 81.3,
+            "humidity": 60,
+            "wind": 76.1
+          },
+          "overridesApplied": [],
+          "at": "2026-08-23T22:00",
+          "raw": {
+            "temp": 12.8,
+            "humidity": 70,
+            "windKmh": 6.1,
+            "windGustKmh": 11.5,
+            "precipMm": 0,
+            "visibilityM": 38440,
+            "weatherCode": 1
+          }
+        }
+      },
+      "raw": {
+        "temp": 16.1,
+        "feelsLike": 13,
+        "humidity": 65,
+        "windKmh": 19.9,
+        "windGustKmh": 37.8,
+        "precipMm": 0,
+        "visibilityM": 38300,
+        "weatherCode": 2,
+        "hoursSinceRain": 18,
+        "observedAt": "2026-08-23T10:30",
+        "timezone": "Europe/Warsaw"
+      }
+    },
+    "sokoliki": {
+      "score": 83,
+      "band": "Prime",
+      "subScores": {
+        "temperature": 100,
+        "wetness": 64.6,
+        "humidity": 64,
+        "wind": 100
       },
       "overridesApplied": [],
       "predictions": {
         "+3h": {
+          "score": 89,
+          "band": "Prime",
+          "subScores": {
+            "temperature": 100,
+            "wetness": 70.8,
+            "humidity": 86,
+            "wind": 100
+          },
+          "overridesApplied": [],
+          "at": "2026-08-23T13:00",
+          "raw": {
+            "temp": 16.8,
+            "humidity": 54,
+            "windKmh": 15.5,
+            "windGustKmh": 44.6,
+            "precipMm": 0,
+            "visibilityM": 40780,
+            "weatherCode": 2
+          }
+        },
+        "+6h": {
+          "score": 91,
+          "band": "Prime",
+          "subScores": {
+            "temperature": 100,
+            "wetness": 76,
+            "humidity": 90,
+            "wind": 100
+          },
+          "overridesApplied": [],
+          "at": "2026-08-23T16:00",
+          "raw": {
+            "temp": 17.3,
+            "humidity": 50,
+            "windKmh": 15.1,
+            "windGustKmh": 44.3,
+            "precipMm": 0,
+            "visibilityM": 41300,
+            "weatherCode": 2
+          }
+        },
+        "+12h": {
+          "score": 84,
+          "band": "Prime",
+          "subScores": {
+            "temperature": 100,
+            "wetness": 82.3,
+            "humidity": 52,
+            "wind": 89.7
+          },
+          "overridesApplied": [],
+          "at": "2026-08-23T22:00",
+          "raw": {
+            "temp": 11.1,
+            "humidity": 74,
+            "windKmh": 6.2,
+            "windGustKmh": 21.2,
+            "precipMm": 0,
+            "visibilityM": 36820,
+            "weatherCode": 0
+          }
+        }
+      },
+      "raw": {
+        "temp": 14.8,
+        "feelsLike": 12.5,
+        "humidity": 68,
+        "windKmh": 13.7,
+        "windGustKmh": 37.1,
+        "precipMm": 0,
+        "visibilityM": 37400,
+        "weatherCode": 3,
+        "hoursSinceRain": 19,
+        "observedAt": "2026-08-23T10:30",
+        "timezone": "Europe/Warsaw"
+      }
+    },
+    "podlesice": {
+      "score": 82,
+      "band": "Prime",
+      "subScores": {
+        "temperature": 100,
+        "wetness": 58.3,
+        "humidity": 66,
+        "wind": 100
+      },
+      "overridesApplied": [],
+      "predictions": {
+        "+3h": {
+          "score": 86,
+          "band": "Prime",
+          "subScores": {
+            "temperature": 96,
+            "wetness": 64.6,
+            "humidity": 86,
+            "wind": 100
+          },
+          "overridesApplied": [],
+          "at": "2026-08-23T13:00",
+          "raw": {
+            "temp": 18.8,
+            "humidity": 54,
+            "windKmh": 15.5,
+            "windGustKmh": 34.6,
+            "precipMm": 0,
+            "visibilityM": 21440,
+            "weatherCode": 0
+          }
+        },
+        "+6h": {
+          "score": 88,
+          "band": "Prime",
+          "subScores": {
+            "temperature": 91.5,
+            "wetness": 70.8,
+            "humidity": 95,
+            "wind": 100
+          },
+          "overridesApplied": [],
+          "at": "2026-08-23T16:00",
+          "raw": {
+            "temp": 19.7,
+            "humidity": 45,
+            "windKmh": 14,
+            "windGustKmh": 34.9,
+            "precipMm": 0,
+            "visibilityM": 25200,
+            "weatherCode": 0
+          }
+        },
+        "+12h": {
           "score": 82,
           "band": "Prime",
           "subScores": {
             "temperature": 100,
-            "wetness": 68.8,
-            "humidity": 62,
-            "wind": 86.7
+            "wetness": 79.2,
+            "humidity": 58,
+            "wind": 77.6
           },
           "overridesApplied": [],
-          "at": "2026-08-23T12:00",
+          "at": "2026-08-23T22:00",
           "raw": {
-            "temp": 17.1,
-            "humidity": 69,
-            "windKmh": 7.9,
-            "windGustKmh": 19.1,
+            "temp": 13.5,
+            "humidity": 71,
+            "windKmh": 6.5,
+            "windGustKmh": 12.6,
             "precipMm": 0,
-            "visibilityM": 38080,
-            "weatherCode": 2
+            "visibilityM": 50000,
+            "weatherCode": 0
+          }
+        }
+      },
+      "raw": {
+        "temp": 16.6,
+        "feelsLike": 15,
+        "humidity": 67,
+        "windKmh": 14.4,
+        "windGustKmh": 31.7,
+        "precipMm": 0,
+        "visibilityM": 15840,
+        "weatherCode": 0,
+        "hoursSinceRain": 16,
+        "observedAt": "2026-08-23T10:30",
+        "timezone": "Europe/Warsaw"
+      }
+    },
+    "morsko": {
+      "score": 83,
+      "band": "Prime",
+      "subScores": {
+        "temperature": 100,
+        "wetness": 58.3,
+        "humidity": 70,
+        "wind": 100
+      },
+      "overridesApplied": [],
+      "predictions": {
+        "+3h": {
+          "score": 86,
+          "band": "Prime",
+          "subScores": {
+            "temperature": 96,
+            "wetness": 64.6,
+            "humidity": 87,
+            "wind": 100
+          },
+          "overridesApplied": [],
+          "at": "2026-08-23T13:00",
+          "raw": {
+            "temp": 18.8,
+            "humidity": 53,
+            "windKmh": 14,
+            "windGustKmh": 36.4,
+            "precipMm": 0,
+            "visibilityM": 21700,
+            "weatherCode": 0
+          }
+        },
+        "+6h": {
+          "score": 88,
+          "band": "Prime",
+          "subScores": {
+            "temperature": 92.5,
+            "wetness": 70.8,
+            "humidity": 93,
+            "wind": 100
+          },
+          "overridesApplied": [],
+          "at": "2026-08-23T16:00",
+          "raw": {
+            "temp": 19.5,
+            "humidity": 47,
+            "windKmh": 12.6,
+            "windGustKmh": 36.4,
+            "precipMm": 0,
+            "visibilityM": 24540,
+            "weatherCode": 0
+          }
+        },
+        "+12h": {
+          "score": 83,
+          "band": "Prime",
+          "subScores": {
+            "temperature": 100,
+            "wetness": 79.2,
+            "humidity": 60,
+            "wind": 79.2
+          },
+          "overridesApplied": [],
+          "at": "2026-08-23T22:00",
+          "raw": {
+            "temp": 14.1,
+            "humidity": 70,
+            "windKmh": 6.5,
+            "windGustKmh": 13.7,
+            "precipMm": 0,
+            "visibilityM": 50000,
+            "weatherCode": 0
+          }
+        }
+      },
+      "raw": {
+        "temp": 16.7,
+        "feelsLike": 15.3,
+        "humidity": 65,
+        "windKmh": 13,
+        "windGustKmh": 33.1,
+        "precipMm": 0,
+        "visibilityM": 16600,
+        "weatherCode": 0,
+        "hoursSinceRain": 16,
+        "observedAt": "2026-08-23T10:30",
+        "timezone": "Europe/Warsaw"
+      }
+    },
+    "rzedkowice": {
+      "score": 82,
+      "band": "Prime",
+      "subScores": {
+        "temperature": 100,
+        "wetness": 58.3,
+        "humidity": 68,
+        "wind": 100
+      },
+      "overridesApplied": [],
+      "predictions": {
+        "+3h": {
+          "score": 86,
+          "band": "Prime",
+          "subScores": {
+            "temperature": 96.5,
+            "wetness": 64.6,
+            "humidity": 87,
+            "wind": 100
+          },
+          "overridesApplied": [],
+          "at": "2026-08-23T13:00",
+          "raw": {
+            "temp": 18.7,
+            "humidity": 53,
+            "windKmh": 15.5,
+            "windGustKmh": 36.7,
+            "precipMm": 0,
+            "visibilityM": 21740,
+            "weatherCode": 0
+          }
+        },
+        "+6h": {
+          "score": 88,
+          "band": "Prime",
+          "subScores": {
+            "temperature": 92.5,
+            "wetness": 70.8,
+            "humidity": 93,
+            "wind": 100
+          },
+          "overridesApplied": [],
+          "at": "2026-08-23T16:00",
+          "raw": {
+            "temp": 19.5,
+            "humidity": 47,
+            "windKmh": 14,
+            "windGustKmh": 37.1,
+            "precipMm": 0,
+            "visibilityM": 24260,
+            "weatherCode": 0
+          }
+        },
+        "+12h": {
+          "score": 81,
+          "band": "Prime",
+          "subScores": {
+            "temperature": 100,
+            "wetness": 79.2,
+            "humidity": 54,
+            "wind": 76.1
+          },
+          "overridesApplied": [],
+          "at": "2026-08-23T22:00",
+          "raw": {
+            "temp": 13.4,
+            "humidity": 73,
+            "windKmh": 4.3,
+            "windGustKmh": 11.5,
+            "precipMm": 0,
+            "visibilityM": 50000,
+            "weatherCode": 0
+          }
+        }
+      },
+      "raw": {
+        "temp": 16.6,
+        "feelsLike": 14.9,
+        "humidity": 66,
+        "windKmh": 14.4,
+        "windGustKmh": 33.1,
+        "precipMm": 0,
+        "visibilityM": 16100,
+        "weatherCode": 0,
+        "hoursSinceRain": 16,
+        "observedAt": "2026-08-23T10:30",
+        "timezone": "Europe/Warsaw"
+      }
+    },
+    "dolina-bedkowska": {
+      "score": 79,
+      "band": "Excellent",
+      "subScores": {
+        "temperature": 100,
+        "wetness": 54.2,
+        "humidity": 62,
+        "wind": 96.3
+      },
+      "overridesApplied": [],
+      "predictions": {
+        "+3h": {
+          "score": 86,
+          "band": "Prime",
+          "subScores": {
+            "temperature": 99.5,
+            "wetness": 60.4,
+            "humidity": 85,
+            "wind": 100
+          },
+          "overridesApplied": [],
+          "at": "2026-08-23T13:00",
+          "raw": {
+            "temp": 18.1,
+            "humidity": 55,
+            "windKmh": 11.2,
+            "windGustKmh": 29.9,
+            "precipMm": 0,
+            "visibilityM": 20640,
+            "weatherCode": 1
           }
         },
         "+6h": {
           "score": 86,
           "band": "Prime",
           "subScores": {
-            "temperature": 93,
-            "wetness": 75,
-            "humidity": 87,
-            "wind": 90.8
+            "temperature": 96.5,
+            "wetness": 66.7,
+            "humidity": 89,
+            "wind": 94.3
           },
           "overridesApplied": [],
-          "at": "2026-08-23T15:00",
+          "at": "2026-08-23T16:00",
           "raw": {
-            "temp": 19.4,
-            "humidity": 53,
-            "windKmh": 8.9,
-            "windGustKmh": 22,
+            "temp": 18.7,
+            "humidity": 51,
+            "windKmh": 7.2,
+            "windGustKmh": 24.5,
             "precipMm": 0,
-            "visibilityM": 40980,
+            "visibilityM": 22580,
             "weatherCode": 3
           }
         },
@@ -1240,88 +783,365 @@
           "band": "Prime",
           "subScores": {
             "temperature": 100,
-            "wetness": 81.3,
-            "humidity": 56,
-            "wind": 70.6
+            "wetness": 77.1,
+            "humidity": 46,
+            "wind": 86.7
           },
           "overridesApplied": [],
-          "at": "2026-08-23T21:00",
+          "at": "2026-08-23T22:00",
           "raw": {
-            "temp": 13.9,
-            "humidity": 72,
-            "windKmh": 3.5,
-            "windGustKmh": 7.6,
+            "temp": 13.8,
+            "humidity": 77,
+            "windKmh": 9,
+            "windGustKmh": 19.1,
             "precipMm": 0,
-            "visibilityM": 39640,
+            "visibilityM": 50000,
+            "weatherCode": 2
+          }
+        }
+      },
+      "raw": {
+        "temp": 15.9,
+        "feelsLike": 14.9,
+        "humidity": 69,
+        "windKmh": 9.7,
+        "windGustKmh": 25.9,
+        "precipMm": 0,
+        "visibilityM": 15420,
+        "weatherCode": 0,
+        "hoursSinceRain": 14,
+        "observedAt": "2026-08-23T10:30",
+        "timezone": "Europe/Warsaw"
+      }
+    },
+    "mirow": {
+      "score": 84,
+      "band": "Prime",
+      "subScores": {
+        "temperature": 100,
+        "wetness": 58.3,
+        "humidity": 76,
+        "wind": 100
+      },
+      "overridesApplied": [],
+      "predictions": {
+        "+3h": {
+          "score": 86,
+          "band": "Prime",
+          "subScores": {
+            "temperature": 93.5,
+            "wetness": 64.6,
+            "humidity": 91,
+            "wind": 100
+          },
+          "overridesApplied": [],
+          "at": "2026-08-23T13:00",
+          "raw": {
+            "temp": 19.3,
+            "humidity": 49,
+            "windKmh": 19.1,
+            "windGustKmh": 36.4,
+            "precipMm": 0,
+            "visibilityM": 50000,
+            "weatherCode": 0
+          }
+        },
+        "+6h": {
+          "score": 88,
+          "band": "Prime",
+          "subScores": {
+            "temperature": 91.5,
+            "wetness": 70.8,
+            "humidity": 96,
+            "wind": 100
+          },
+          "overridesApplied": [],
+          "at": "2026-08-23T16:00",
+          "raw": {
+            "temp": 19.7,
+            "humidity": 44,
+            "windKmh": 16.9,
+            "windGustKmh": 35.6,
+            "precipMm": 0,
+            "visibilityM": 25920,
+            "weatherCode": 0
+          }
+        },
+        "+12h": {
+          "score": 82,
+          "band": "Prime",
+          "subScores": {
+            "temperature": 100,
+            "wetness": 79.2,
+            "humidity": 58,
+            "wind": 78.2
+          },
+          "overridesApplied": [],
+          "at": "2026-08-23T22:00",
+          "raw": {
+            "temp": 13.2,
+            "humidity": 71,
+            "windKmh": 8.6,
+            "windGustKmh": 13,
+            "precipMm": 0,
+            "visibilityM": 50000,
             "weatherCode": 0
           }
         }
       },
       "raw": {
-        "temp": 13.2,
-        "feelsLike": 13.5,
-        "humidity": 91,
-        "windKmh": 1.1,
-        "windGustKmh": 6.5,
+        "temp": 17,
+        "feelsLike": 14.6,
+        "humidity": 62,
+        "windKmh": 18,
+        "windGustKmh": 33.8,
         "precipMm": 0,
-        "visibilityM": 12300,
-        "weatherCode": 1,
-        "hoursSinceRain": 18,
-        "observedAt": "2026-08-23T09:30",
-        "timezone": "Europe/Berlin"
+        "visibilityM": 18180,
+        "weatherCode": 0,
+        "hoursSinceRain": 16,
+        "observedAt": "2026-08-23T10:30",
+        "timezone": "Europe/Warsaw"
       }
     },
-    "waldkopf-egloffstein": {
-      "score": 68,
-      "band": "Excellent",
+    "toczek": {
+      "score": 25,
+      "band": "Fair",
       "subScores": {
         "temperature": 100,
-        "wetness": 52.1,
-        "humidity": 28,
-        "wind": 72
+        "wetness": 64.6,
+        "humidity": 54,
+        "wind": 99.3
       },
-      "overridesApplied": [],
+      "overridesApplied": [
+        "wet_sensitive_rock"
+      ],
       "predictions": {
         "+3h": {
+          "score": 25,
+          "band": "Fair",
+          "subScores": {
+            "temperature": 100,
+            "wetness": 70.8,
+            "humidity": 80,
+            "wind": 100
+          },
+          "overridesApplied": [
+            "wet_sensitive_rock"
+          ],
+          "at": "2026-08-23T13:00",
+          "raw": {
+            "temp": 16.7,
+            "humidity": 60,
+            "windKmh": 17.2,
+            "windGustKmh": 31,
+            "precipMm": 0,
+            "visibilityM": 39720,
+            "weatherCode": 3
+          }
+        },
+        "+6h": {
+          "score": 91,
+          "band": "Prime",
+          "subScores": {
+            "temperature": 100,
+            "wetness": 76,
+            "humidity": 86,
+            "wind": 100
+          },
+          "overridesApplied": [],
+          "at": "2026-08-23T16:00",
+          "raw": {
+            "temp": 17.6,
+            "humidity": 54,
+            "windKmh": 16.2,
+            "windGustKmh": 33.5,
+            "precipMm": 0,
+            "visibilityM": 40980,
+            "weatherCode": 2
+          }
+        },
+        "+12h": {
+          "score": 76,
+          "band": "Excellent",
+          "subScores": {
+            "temperature": 96.8,
+            "wetness": 82.3,
+            "humidity": 30,
+            "wind": 70.1
+          },
+          "overridesApplied": [],
+          "at": "2026-08-23T22:00",
+          "raw": {
+            "temp": 9.2,
+            "humidity": 85,
+            "windKmh": 4,
+            "windGustKmh": 7.2,
+            "precipMm": 0,
+            "visibilityM": 29300,
+            "weatherCode": 1
+          }
+        }
+      },
+      "raw": {
+        "temp": 14.4,
+        "feelsLike": 12,
+        "humidity": 73,
+        "windKmh": 16,
+        "windGustKmh": 28.1,
+        "precipMm": 0,
+        "visibilityM": 34760,
+        "weatherCode": 2,
+        "hoursSinceRain": 19,
+        "observedAt": "2026-08-23T10:30",
+        "timezone": "Europe/Warsaw"
+      }
+    },
+    "adamow": {
+      "score": 25,
+      "band": "Fair",
+      "subScores": {
+        "temperature": 100,
+        "wetness": 58.3,
+        "humidity": 76,
+        "wind": 100
+      },
+      "overridesApplied": [
+        "wet_sensitive_rock"
+      ],
+      "predictions": {
+        "+3h": {
+          "score": 25,
+          "band": "Fair",
+          "subScores": {
+            "temperature": 91.5,
+            "wetness": 64.6,
+            "humidity": 90,
+            "wind": 100
+          },
+          "overridesApplied": [
+            "wet_sensitive_rock"
+          ],
+          "at": "2026-08-23T13:00",
+          "raw": {
+            "temp": 19.7,
+            "humidity": 50,
+            "windKmh": 11.9,
+            "windGustKmh": 33.1,
+            "precipMm": 0,
+            "visibilityM": 50000,
+            "weatherCode": 1
+          }
+        },
+        "+6h": {
+          "score": 25,
+          "band": "Fair",
+          "subScores": {
+            "temperature": 90,
+            "wetness": 70.8,
+            "humidity": 93,
+            "wind": 100
+          },
+          "overridesApplied": [
+            "wet_sensitive_rock"
+          ],
+          "at": "2026-08-23T16:00",
+          "raw": {
+            "temp": 20,
+            "humidity": 47,
+            "windKmh": 10.8,
+            "windGustKmh": 32.4,
+            "precipMm": 0,
+            "visibilityM": 25100,
+            "weatherCode": 0
+          }
+        },
+        "+12h": {
           "score": 81,
           "band": "Prime",
           "subScores": {
             "temperature": 100,
-            "wetness": 58.3,
-            "humidity": 70,
-            "wind": 91.8
+            "wetness": 79.2,
+            "humidity": 50,
+            "wind": 75.7
           },
           "overridesApplied": [],
-          "at": "2026-08-23T12:00",
+          "at": "2026-08-23T22:00",
           "raw": {
-            "temp": 15.8,
-            "humidity": 65,
-            "windKmh": 9.9,
-            "windGustKmh": 22.7,
+            "temp": 13.4,
+            "humidity": 75,
+            "windKmh": 6.5,
+            "windGustKmh": 11.2,
             "precipMm": 0,
-            "visibilityM": 38940,
+            "visibilityM": 50000,
+            "weatherCode": 0
+          }
+        }
+      },
+      "raw": {
+        "temp": 17.5,
+        "feelsLike": 16.3,
+        "humidity": 62,
+        "windKmh": 10.8,
+        "windGustKmh": 29.5,
+        "precipMm": 0,
+        "visibilityM": 18280,
+        "weatherCode": 0,
+        "hoursSinceRain": 16,
+        "observedAt": "2026-08-23T10:30",
+        "timezone": "Europe/Warsaw"
+      }
+    },
+    "weissenstein": {
+      "score": 77,
+      "band": "Excellent",
+      "subScores": {
+        "temperature": 100,
+        "wetness": 66.7,
+        "humidity": 52,
+        "wind": 72.6
+      },
+      "overridesApplied": [],
+      "predictions": {
+        "+3h": {
+          "score": 87,
+          "band": "Prime",
+          "subScores": {
+            "temperature": 100,
+            "wetness": 72.9,
+            "humidity": 84,
+            "wind": 89.7
+          },
+          "overridesApplied": [],
+          "at": "2026-08-23T13:00",
+          "raw": {
+            "temp": 17.6,
+            "humidity": 56,
+            "windKmh": 9.1,
+            "windGustKmh": 21.2,
+            "precipMm": 0,
+            "visibilityM": 40700,
             "weatherCode": 2
           }
         },
         "+6h": {
-          "score": 86,
+          "score": 89,
           "band": "Prime",
           "subScores": {
-            "temperature": 100,
-            "wetness": 64.6,
-            "humidity": 88,
-            "wind": 90.2
+            "temperature": 95,
+            "wetness": 77.1,
+            "humidity": 92,
+            "wind": 92.2
           },
           "overridesApplied": [],
-          "at": "2026-08-23T15:00",
+          "at": "2026-08-23T16:00",
           "raw": {
-            "temp": 17.7,
-            "humidity": 52,
-            "windKmh": 10.4,
-            "windGustKmh": 21.6,
+            "temp": 19,
+            "humidity": 48,
+            "windKmh": 9.5,
+            "windGustKmh": 23,
             "precipMm": 0,
-            "visibilityM": 41220,
-            "weatherCode": 1
+            "visibilityM": 41600,
+            "weatherCode": 2
           }
         },
         "+12h": {
@@ -1329,66 +1149,66 @@
           "band": "Prime",
           "subScores": {
             "temperature": 100,
-            "wetness": 76,
-            "humidity": 66,
-            "wind": 76.7
+            "wetness": 83.3,
+            "humidity": 60,
+            "wind": 70
           },
           "overridesApplied": [],
-          "at": "2026-08-23T21:00",
+          "at": "2026-08-23T22:00",
           "raw": {
-            "temp": 12.4,
-            "humidity": 67,
-            "windKmh": 6.4,
-            "windGustKmh": 11.9,
+            "temp": 12.2,
+            "humidity": 70,
+            "windKmh": 1.5,
+            "windGustKmh": 3.6,
             "precipMm": 0,
-            "visibilityM": 39580,
+            "visibilityM": 40080,
             "weatherCode": 0
           }
         }
       },
       "raw": {
-        "temp": 12.9,
-        "feelsLike": 12.7,
-        "humidity": 86,
-        "windKmh": 2.8,
-        "windGustKmh": 8.6,
+        "temp": 15.2,
+        "feelsLike": 15,
+        "humidity": 74,
+        "windKmh": 2.3,
+        "windGustKmh": 9,
         "precipMm": 0,
-        "visibilityM": 21920,
+        "visibilityM": 33160,
         "weatherCode": 2,
-        "hoursSinceRain": 13,
-        "observedAt": "2026-08-23T09:30",
+        "hoursSinceRain": 20,
+        "observedAt": "2026-08-23T10:30",
         "timezone": "Europe/Berlin"
       }
     },
-    "obertrubach": {
-      "score": 68,
+    "krottenseer-turm": {
+      "score": 75,
       "band": "Excellent",
       "subScores": {
         "temperature": 100,
-        "wetness": 52.1,
-        "humidity": 28,
-        "wind": 72.6
+        "wetness": 64.6,
+        "humidity": 42,
+        "wind": 74.6
       },
       "overridesApplied": [],
       "predictions": {
         "+3h": {
-          "score": 82,
+          "score": 85,
           "band": "Prime",
           "subScores": {
-            "temperature": 100,
-            "wetness": 58.3,
-            "humidity": 70,
-            "wind": 95.3
+            "temperature": 99.5,
+            "wetness": 70.8,
+            "humidity": 76,
+            "wind": 89.3
           },
           "overridesApplied": [],
-          "at": "2026-08-23T12:00",
+          "at": "2026-08-23T13:00",
           "raw": {
-            "temp": 15.6,
-            "humidity": 65,
-            "windKmh": 10.4,
-            "windGustKmh": 25.2,
+            "temp": 18.1,
+            "humidity": 62,
+            "windKmh": 9.4,
+            "windGustKmh": 20.9,
             "precipMm": 0,
-            "visibilityM": 38440,
+            "visibilityM": 39700,
             "weatherCode": 2
           }
         },
@@ -1396,67 +1216,67 @@
           "score": 86,
           "band": "Prime",
           "subScores": {
-            "temperature": 100,
-            "wetness": 64.6,
-            "humidity": 87,
-            "wind": 92.2
+            "temperature": 91.5,
+            "wetness": 76,
+            "humidity": 90,
+            "wind": 89.7
           },
           "overridesApplied": [],
-          "at": "2026-08-23T15:00",
+          "at": "2026-08-23T16:00",
           "raw": {
-            "temp": 17.6,
-            "humidity": 53,
-            "windKmh": 9.9,
-            "windGustKmh": 23,
+            "temp": 19.7,
+            "humidity": 50,
+            "windKmh": 8.6,
+            "windGustKmh": 21.2,
             "precipMm": 0,
-            "visibilityM": 40880,
-            "weatherCode": 1
+            "visibilityM": 41460,
+            "weatherCode": 2
           }
         },
         "+12h": {
-          "score": 84,
+          "score": 81,
           "band": "Prime",
           "subScores": {
             "temperature": 100,
-            "wetness": 76,
-            "humidity": 74,
-            "wind": 74.6
+            "wetness": 82.3,
+            "humidity": 54,
+            "wind": 70.2
           },
           "overridesApplied": [],
-          "at": "2026-08-23T21:00",
+          "at": "2026-08-23T22:00",
           "raw": {
-            "temp": 13,
-            "humidity": 63,
-            "windKmh": 5.4,
-            "windGustKmh": 10.4,
+            "temp": 12.7,
+            "humidity": 73,
+            "windKmh": 5.1,
+            "windGustKmh": 7.2,
             "precipMm": 0,
-            "visibilityM": 40660,
+            "visibilityM": 39820,
             "weatherCode": 0
           }
         }
       },
       "raw": {
-        "temp": 13,
-        "feelsLike": 12.8,
-        "humidity": 86,
-        "windKmh": 2.9,
-        "windGustKmh": 9,
+        "temp": 15.7,
+        "feelsLike": 15.7,
+        "humidity": 79,
+        "windKmh": 4,
+        "windGustKmh": 10.4,
         "precipMm": 0,
-        "visibilityM": 14760,
+        "visibilityM": 30040,
         "weatherCode": 2,
-        "hoursSinceRain": 13,
-        "observedAt": "2026-08-23T09:30",
+        "hoursSinceRain": 19,
+        "observedAt": "2026-08-23T10:30",
         "timezone": "Europe/Berlin"
       }
     },
-    "houbirg": {
-      "score": 72,
+    "waldkopf-egloffstein": {
+      "score": 73,
       "band": "Excellent",
       "subScores": {
         "temperature": 100,
-        "wetness": 62.5,
-        "humidity": 30,
-        "wind": 74.1
+        "wetness": 54.2,
+        "humidity": 48,
+        "wind": 75.7
       },
       "overridesApplied": [],
       "predictions": {
@@ -1465,19 +1285,19 @@
           "band": "Prime",
           "subScores": {
             "temperature": 100,
-            "wetness": 68.8,
-            "humidity": 76,
-            "wind": 85.2
+            "wetness": 60.4,
+            "humidity": 80,
+            "wind": 93.3
           },
           "overridesApplied": [],
-          "at": "2026-08-23T12:00",
+          "at": "2026-08-23T13:00",
           "raw": {
-            "temp": 17.4,
-            "humidity": 62,
-            "windKmh": 7.6,
-            "windGustKmh": 18,
+            "temp": 16.7,
+            "humidity": 60,
+            "windKmh": 9.2,
+            "windGustKmh": 23.8,
             "precipMm": 0,
-            "visibilityM": 39640,
+            "visibilityM": 39960,
             "weatherCode": 2
           }
         },
@@ -1485,21 +1305,21 @@
           "score": 87,
           "band": "Prime",
           "subScores": {
-            "temperature": 94.5,
-            "wetness": 75,
-            "humidity": 87,
-            "wind": 90.2
+            "temperature": 100,
+            "wetness": 66.7,
+            "humidity": 89,
+            "wind": 89.7
           },
           "overridesApplied": [],
-          "at": "2026-08-23T15:00",
+          "at": "2026-08-23T16:00",
           "raw": {
-            "temp": 19.1,
-            "humidity": 53,
-            "windKmh": 9,
-            "windGustKmh": 21.6,
+            "temp": 17.8,
+            "humidity": 51,
+            "windKmh": 11.1,
+            "windGustKmh": 21.2,
             "precipMm": 0,
-            "visibilityM": 41020,
-            "weatherCode": 3
+            "visibilityM": 41360,
+            "weatherCode": 2
           }
         },
         "+12h": {
@@ -1507,34 +1327,212 @@
           "band": "Prime",
           "subScores": {
             "temperature": 100,
-            "wetness": 81.3,
+            "wetness": 77.1,
             "humidity": 68,
-            "wind": 70
+            "wind": 76.7
           },
           "overridesApplied": [],
-          "at": "2026-08-23T21:00",
+          "at": "2026-08-23T22:00",
           "raw": {
-            "temp": 14.7,
+            "temp": 11.6,
             "humidity": 66,
-            "windKmh": 2.9,
-            "windGustKmh": 3.2,
+            "windKmh": 6.4,
+            "windGustKmh": 11.9,
             "precipMm": 0,
-            "visibilityM": 40640,
+            "visibilityM": 39640,
             "weatherCode": 0
           }
         }
       },
       "raw": {
-        "temp": 13.8,
-        "feelsLike": 13.7,
-        "humidity": 85,
-        "windKmh": 3.6,
-        "windGustKmh": 10.1,
+        "temp": 14.4,
+        "feelsLike": 13.9,
+        "humidity": 76,
+        "windKmh": 4.6,
+        "windGustKmh": 11.2,
         "precipMm": 0,
-        "visibilityM": 22520,
+        "visibilityM": 32380,
+        "weatherCode": 2,
+        "hoursSinceRain": 14,
+        "observedAt": "2026-08-23T10:30",
+        "timezone": "Europe/Berlin"
+      }
+    },
+    "obertrubach": {
+      "score": 74,
+      "band": "Excellent",
+      "subScores": {
+        "temperature": 100,
+        "wetness": 54.2,
+        "humidity": 52,
+        "wind": 78.2
+      },
+      "overridesApplied": [],
+      "predictions": {
+        "+3h": {
+          "score": 84,
+          "band": "Prime",
+          "subScores": {
+            "temperature": 100,
+            "wetness": 60.4,
+            "humidity": 80,
+            "wind": 95.8
+          },
+          "overridesApplied": [],
+          "at": "2026-08-23T13:00",
+          "raw": {
+            "temp": 16.5,
+            "humidity": 60,
+            "windKmh": 9.8,
+            "windGustKmh": 25.6,
+            "precipMm": 0,
+            "visibilityM": 39680,
+            "weatherCode": 2
+          }
+        },
+        "+6h": {
+          "score": 87,
+          "band": "Prime",
+          "subScores": {
+            "temperature": 100,
+            "wetness": 66.7,
+            "humidity": 89,
+            "wind": 90.2
+          },
+          "overridesApplied": [],
+          "at": "2026-08-23T16:00",
+          "raw": {
+            "temp": 17.8,
+            "humidity": 51,
+            "windKmh": 11.4,
+            "windGustKmh": 21.6,
+            "precipMm": 0,
+            "visibilityM": 41180,
+            "weatherCode": 2
+          }
+        },
+        "+12h": {
+          "score": 82,
+          "band": "Prime",
+          "subScores": {
+            "temperature": 100,
+            "wetness": 77.1,
+            "humidity": 62,
+            "wind": 76.1
+          },
+          "overridesApplied": [],
+          "at": "2026-08-23T22:00",
+          "raw": {
+            "temp": 11.8,
+            "humidity": 69,
+            "windKmh": 5.9,
+            "windGustKmh": 11.5,
+            "precipMm": 0,
+            "visibilityM": 39660,
+            "weatherCode": 0
+          }
+        }
+      },
+      "raw": {
+        "temp": 14.6,
+        "feelsLike": 14,
+        "humidity": 74,
+        "windKmh": 4.7,
+        "windGustKmh": 13,
+        "precipMm": 0,
+        "visibilityM": 32920,
+        "weatherCode": 2,
+        "hoursSinceRain": 14,
+        "observedAt": "2026-08-23T10:30",
+        "timezone": "Europe/Berlin"
+      }
+    },
+    "houbirg": {
+      "score": 75,
+      "band": "Excellent",
+      "subScores": {
+        "temperature": 100,
+        "wetness": 64.6,
+        "humidity": 44,
+        "wind": 76.1
+      },
+      "overridesApplied": [],
+      "predictions": {
+        "+3h": {
+          "score": 86,
+          "band": "Prime",
+          "subScores": {
+            "temperature": 100,
+            "wetness": 70.8,
+            "humidity": 81,
+            "wind": 89.3
+          },
+          "overridesApplied": [],
+          "at": "2026-08-23T13:00",
+          "raw": {
+            "temp": 17.9,
+            "humidity": 59,
+            "windKmh": 10.1,
+            "windGustKmh": 20.9,
+            "precipMm": 0,
+            "visibilityM": 40120,
+            "weatherCode": 2
+          }
+        },
+        "+6h": {
+          "score": 87,
+          "band": "Prime",
+          "subScores": {
+            "temperature": 92.5,
+            "wetness": 76,
+            "humidity": 89,
+            "wind": 93.7
+          },
+          "overridesApplied": [],
+          "at": "2026-08-23T16:00",
+          "raw": {
+            "temp": 19.5,
+            "humidity": 51,
+            "windKmh": 9.4,
+            "windGustKmh": 24.1,
+            "precipMm": 0,
+            "visibilityM": 41260,
+            "weatherCode": 1
+          }
+        },
+        "+12h": {
+          "score": 83,
+          "band": "Prime",
+          "subScores": {
+            "temperature": 100,
+            "wetness": 82.3,
+            "humidity": 62,
+            "wind": 70
+          },
+          "overridesApplied": [],
+          "at": "2026-08-23T22:00",
+          "raw": {
+            "temp": 13.3,
+            "humidity": 69,
+            "windKmh": 4.7,
+            "windGustKmh": 6.5,
+            "precipMm": 0,
+            "visibilityM": 40060,
+            "weatherCode": 0
+          }
+        }
+      },
+      "raw": {
+        "temp": 15.4,
+        "feelsLike": 15.3,
+        "humidity": 78,
+        "windKmh": 4.4,
+        "windGustKmh": 11.5,
+        "precipMm": 0,
+        "visibilityM": 31180,
         "weatherCode": 1,
-        "hoursSinceRain": 18,
-        "observedAt": "2026-08-23T09:30",
+        "hoursSinceRain": 19,
+        "observedAt": "2026-08-23T10:30",
         "timezone": "Europe/Berlin"
       }
     },
@@ -1543,8 +1541,8 @@
       "band": "Fair",
       "subScores": {
         "temperature": 100,
-        "wetness": 23.3,
-        "humidity": 20,
+        "wetness": 0,
+        "humidity": 22,
         "wind": 100
       },
       "overridesApplied": [
@@ -1556,43 +1554,41 @@
           "band": "Excellent",
           "subScores": {
             "temperature": 100,
-            "wetness": 3.3,
-            "humidity": 36,
+            "wetness": 6.7,
+            "humidity": 30,
             "wind": 100
           },
           "overridesApplied": [],
-          "at": "2026-08-23T12:00",
+          "at": "2026-08-23T13:00",
           "raw": {
-            "temp": 15.4,
-            "humidity": 82,
-            "windKmh": 16.4,
-            "windGustKmh": 35.3,
+            "temp": 14.6,
+            "humidity": 85,
+            "windKmh": 14.2,
+            "windGustKmh": 38.2,
             "precipMm": 0,
-            "visibilityM": 30920,
+            "visibilityM": 27620,
             "weatherCode": 3
           }
         },
         "+6h": {
-          "score": 20,
-          "band": "Fair",
+          "score": 61,
+          "band": "Excellent",
           "subScores": {
             "temperature": 100,
-            "wetness": 0,
-            "humidity": 32,
+            "wetness": 3.3,
+            "humidity": 38,
             "wind": 100
           },
-          "overridesApplied": [
-            "precipitating_now"
-          ],
-          "at": "2026-08-23T15:00",
+          "overridesApplied": [],
+          "at": "2026-08-23T16:00",
           "raw": {
-            "temp": 14.6,
-            "humidity": 84,
-            "windKmh": 13.6,
+            "temp": 16.1,
+            "humidity": 81,
+            "windKmh": 13.8,
             "windGustKmh": 33.1,
-            "precipMm": 0.1,
-            "visibilityM": 28920,
-            "weatherCode": 80
+            "precipMm": 0,
+            "visibilityM": 31780,
+            "weatherCode": 2
           }
         },
         "+12h": {
@@ -1600,34 +1596,34 @@
           "band": "Good",
           "subScores": {
             "temperature": 100,
-            "wetness": 3.3,
-            "humidity": 12,
-            "wind": 82.7
+            "wetness": 6.7,
+            "humidity": 8,
+            "wind": 81.1
           },
           "overridesApplied": [],
-          "at": "2026-08-23T21:00",
+          "at": "2026-08-23T22:00",
           "raw": {
-            "temp": 13.4,
-            "humidity": 92,
-            "windKmh": 7.2,
-            "windGustKmh": 16.2,
+            "temp": 12.9,
+            "humidity": 93,
+            "windKmh": 7,
+            "windGustKmh": 15.1,
             "precipMm": 0,
-            "visibilityM": 20920,
+            "visibilityM": 18240,
             "weatherCode": 3
           }
         }
       },
       "raw": {
         "temp": 13.9,
-        "feelsLike": 12.7,
-        "humidity": 90,
-        "windKmh": 12.7,
-        "windGustKmh": 34.2,
+        "feelsLike": 12.8,
+        "humidity": 89,
+        "windKmh": 12.2,
+        "windGustKmh": 31,
         "precipMm": 0,
-        "visibilityM": 12560,
+        "visibilityM": 15380,
         "weatherCode": 61,
-        "hoursSinceRain": 5,
-        "observedAt": "2026-08-23T09:30",
+        "hoursSinceRain": 0,
+        "observedAt": "2026-08-23T10:30",
         "timezone": "Europe/Warsaw"
       }
     },
@@ -1636,8 +1632,8 @@
       "band": "Fair",
       "subScores": {
         "temperature": 100,
-        "wetness": 62.5,
-        "humidity": 44,
+        "wetness": 64.6,
+        "humidity": 50,
         "wind": 100
       },
       "overridesApplied": [
@@ -1649,22 +1645,22 @@
           "band": "Fair",
           "subScores": {
             "temperature": 100,
-            "wetness": 68.8,
-            "humidity": 64,
+            "wetness": 70.8,
+            "humidity": 74,
             "wind": 100
           },
           "overridesApplied": [
             "wet_sensitive_rock"
           ],
-          "at": "2026-08-23T12:00",
+          "at": "2026-08-23T13:00",
           "raw": {
-            "temp": 14.2,
-            "humidity": 68,
-            "windKmh": 14,
-            "windGustKmh": 38.9,
+            "temp": 15.1,
+            "humidity": 63,
+            "windKmh": 15.2,
+            "windGustKmh": 38.5,
             "precipMm": 0,
-            "visibilityM": 36600,
-            "weatherCode": 2
+            "visibilityM": 39100,
+            "weatherCode": 3
           }
         },
         "+6h": {
@@ -1672,55 +1668,55 @@
           "band": "Prime",
           "subScores": {
             "temperature": 100,
-            "wetness": 75,
-            "humidity": 85,
+            "wetness": 76,
+            "humidity": 84,
             "wind": 100
           },
           "overridesApplied": [],
-          "at": "2026-08-23T15:00",
+          "at": "2026-08-23T16:00",
           "raw": {
             "temp": 16.1,
-            "humidity": 55,
-            "windKmh": 15.9,
+            "humidity": 56,
+            "windKmh": 14.5,
             "windGustKmh": 41,
             "precipMm": 0,
-            "visibilityM": 40640,
-            "weatherCode": 3
+            "visibilityM": 40580,
+            "weatherCode": 2
           }
         },
         "+12h": {
-          "score": 84,
+          "score": 81,
           "band": "Prime",
           "subScores": {
-            "temperature": 100,
-            "wetness": 81.3,
-            "humidity": 54,
-            "wind": 85.2
+            "temperature": 97.6,
+            "wetness": 82.3,
+            "humidity": 42,
+            "wind": 83.7
           },
           "overridesApplied": [],
-          "at": "2026-08-23T21:00",
+          "at": "2026-08-23T22:00",
           "raw": {
-            "temp": 10.4,
-            "humidity": 73,
-            "windKmh": 6.3,
-            "windGustKmh": 18,
+            "temp": 9.4,
+            "humidity": 79,
+            "windKmh": 5.7,
+            "windGustKmh": 16.9,
             "precipMm": 0,
-            "visibilityM": 37180,
-            "weatherCode": 0
+            "visibilityM": 34540,
+            "weatherCode": 1
           }
         }
       },
       "raw": {
-        "temp": 12.4,
-        "feelsLike": 10,
-        "humidity": 78,
-        "windKmh": 13.5,
-        "windGustKmh": 33.8,
+        "temp": 13.1,
+        "feelsLike": 10.7,
+        "humidity": 75,
+        "windKmh": 14.3,
+        "windGustKmh": 36.4,
         "precipMm": 0,
-        "visibilityM": 29780,
+        "visibilityM": 32600,
         "weatherCode": 2,
-        "hoursSinceRain": 18,
-        "observedAt": "2026-08-23T09:30",
+        "hoursSinceRain": 19,
+        "observedAt": "2026-08-23T10:30",
         "timezone": "Europe/Warsaw"
       }
     }
